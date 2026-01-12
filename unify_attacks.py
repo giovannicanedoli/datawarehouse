@@ -42,8 +42,8 @@ def categorize_attack(attack_val):
 def main():
     print("Loading datasets...")
     try:
-        df1 = pd.read_csv("organization_data_breaches.csv")
-        df2 = pd.read_csv("Global_Cybersecurity_Threats_2015-2024.csv")
+        df1 = pd.read_csv("data/organization_data_breaches.csv")
+        df2 = pd.read_csv("data/Global_Cybersecurity_Threats_2015-2024.csv")
     except FileNotFoundError as e:
         print(f"Error: {e}")
         return
@@ -60,16 +60,16 @@ def main():
     # Get all unique values from both columns
     all_methods = pd.concat([df1['Method'].rename("Original_Value"), df2['Attack Type'].rename("Original_Value")]).unique()
     dim_df = pd.DataFrame({'Original_Value': all_methods})
+    print(dim_df)
     dim_df['Unified_Attack_Category'] = dim_df['Original_Value'].apply(categorize_attack)
+    print(dim_df)
     
+    df1 = df1.drop(columns=["Entity", "Year" ,"Records","Organization type","Sources"])
+    df2 = df2.drop(columns=["Country","Year","Target Industry","Financial Loss (in Million $)","Number of Affected Users","Attack Source","Security Vulnerability Type","Defense Mechanism Used","Incident Resolution Time (in Hours)"])
     print("Saving outputs...")
-    dim_df.to_csv("Dim_Attack_Map.csv", index=False)
-    df1.to_csv("organization_data_breaches_unified.csv", index=False)
-    df2.to_csv("Global_Cybersecurity_Threats_unified.csv", index=False)
+    dim_df.to_csv("test/Dim_Attack_Map.csv", index=False)
+    df1.to_csv("test/organization_data_breaches_unified.csv", index=False)
+    df2.to_csv("test/Global_Cybersecurity_Threats_unified.csv", index=False)
     
-    print("Done.")
-    print("\nSample Mapping:")
-    print(dim_df.sample(10 if len(dim_df) > 10 else len(dim_df)))
-
 if __name__ == "__main__":
     main()
