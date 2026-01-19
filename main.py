@@ -14,7 +14,7 @@ def main():
     try:
         df1 = pd.read_csv("data/organization_data_breaches.csv")
         df2 = pd.read_csv("data/Global_Cybersecurity_Threats_2015-2024.csv")
-        df3 = pd.read_csv("data/LossFromNetCrime.csv")
+        df3 = pd.read_csv("data/LossFromNetCrime.csv", keep_default_na=False) #Namibia NA is interpreted as NaN
     except FileNotFoundError as e:
         print(f"Error while opening one or more files: {e}")
         return
@@ -38,6 +38,11 @@ def main():
     df3_unified['Complaints'] = pd.to_numeric(df3_unified['Complaints'], errors='coerce')
     df3_unified['Losses'] = pd.to_numeric(df3_unified['Losses'], errors='coerce')
 
+    # Add geography
+    df3_unified["Continent"] = df3_unified["Country"].apply(categorize_continent)
+    df3_unified["Nation_Wealth"] = df3_unified["Country"].apply(categorize_nation_by_wealth)
+    df3_unified["West_or_East"] = df3_unified["Country"].apply(categorize_west_or_est_country)
+
     # Cleaning unused data
     print("Cleaning unused data...")
     df1 = df1.drop(columns=["Sources"])
@@ -53,6 +58,9 @@ def main():
     # df2 uses 'Attack Type'
     df2['Unified_Attack_Category'] = df2['Attack Type'].apply(categorize_attack)
     df2['Unified_Industry'] = df2['Target Industry'].apply(categorize_industry)
+
+    #remove null values from df1
+    df1 = df1.dropna()
 
     print("Saving outputs...")
     

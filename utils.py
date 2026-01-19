@@ -1,30 +1,31 @@
+import pandas as pd
 country_map = {
-        'AE': 'United Arab Emirates', 'AF': 'Afghanistan', 'AL': 'Albania', 'AM': 'Armenia', 
-        'AO': 'Angola', 'AR': 'Argentina', 'AT': 'Austria', 'AU': 'Australia', 'AZ': 'Azerbaijan',
-        'BA': 'Bosnia and Herzegovina', 'BD': 'Bangladesh', 'BE': 'Belgium', 'BG': 'Bulgaria', 
-        'BH': 'Bahrain', 'BY': 'Belarus', 'BZ': 'Belize', 'BR': 'Brazil', 'CA': 'Canada', 
-        'CH': 'Switzerland', 'CL': 'Chile', 'CN': 'China', 'CO': 'Colombia', 'CR': 'Costa Rica', 
-        'CY': 'Cyprus', 'CZ': 'Czech Republic', 'DE': 'Germany', 'DK': 'Denmark', 'DO': 'Dominican Republic',
-        'EC': 'Ecuador', 'EE': 'Estonia', 'EG': 'Egypt', 'ES': 'Spain', 'FI': 'Finland', 
-        'FR': 'France', 'GB': 'UK', 'GE': 'Georgia', 'GH': 'Ghana', 'GN': 'Guinea', 
-        'GR': 'Greece', 'GT': 'Guatemala', 'HK': 'Hong Kong', 'HN': 'Honduras', 'HR': 'Croatia', 
-        'HU': 'Hungary', 'ID': 'Indonesia', 'IE': 'Ireland', 'IL': 'Israel', 'IN': 'India', 
-        'IQ': 'Iraq', 'IR': 'Iran', 'IS': 'Iceland', 'IT': 'Italy', 'JO': 'Jordan', 
-        'JP': 'Japan', 'KE': 'Kenya', 'KG': 'Kyrgyzstan', 'KH': 'Cambodia', 'KN': 'Saint Kitts and Nevis', 
-        'KR': 'South Korea', 'KZ': 'Kazakhstan', 'LB': 'Lebanon', 'LK': 'Sri Lanka', 'LT': 'Lithuania', 
-        'LU': 'Luxembourg', 'LV': 'Latvia', 'LY': 'Libya', 'MD': 'Moldova', 'MM': 'Myanmar', 
-        'MN': 'Mongolia', 'MT': 'Malta', 'MV': 'Maldives', 'MX': 'Mexico', 'MY': 'Malaysia', 
-        'MZ': 'Mozambique', 'NG': 'Nigeria', 'NI': 'Nicaragua', 'NL': 'Netherlands', 'NO': 'Norway', 
-        'NP': 'Nepal', 'NZ': 'New Zealand', 'OM': 'Oman', 'PA': 'Panama', 'PE': 'Peru', 
-        'PG': 'Papua New Guinea', 'PH': 'Philippines', 'PK': 'Pakistan', 'PL': 'Poland', 
-        'PR': 'Puerto Rico', 'PS': 'Palestine', 'PT': 'Portugal', 'PY': 'Paraguay', 'RO': 'Romania', 
-        'RS': 'Serbia', 'RU': 'Russia', 'SA': 'Saudi Arabia', 'SC': 'Seychelles', 'SE': 'Sweden', 
-        'SG': 'Singapore', 'SI': 'Slovenia', 'SK': 'Slovakia', 'SV': 'El Salvador', 'SZ': 'Eswatini', 
-        'TH': 'Thailand', 'TR': 'Turkey', 'TW': 'Taiwan', 'TZ': 'Tanzania', 'UA': 'Ukraine', 
-        'UG': 'Uganda', 'US': 'USA', 'UZ': 'Uzbekistan', 'VE': 'Venezuela', 'VG': 'British Virgin Islands', 
-        'VN': 'Vietnam', 'YE': 'Yemen', 'ZA': 'South Africa', 'ZW': 'Zimbabwe'
-    }
-
+    'PR': 'Puerto Rico', 'PS': 'Palestine', 'PT': 'Portugal', 'PY': 'Paraguay', 
+    'AE': 'United Arab Emirates', 'AF': 'Afghanistan', 'AL': 'Albania', 'AM': 'Armenia', 
+    'AO': 'Angola', 'AR': 'Argentina', 'AT': 'Austria', 'AU': 'Australia', 'AZ': 'Azerbaijan', 
+    'RO': 'Romania', 'BA': 'Bosnia and Herzegovina', 'RS': 'Serbia', 'BD': 'Bangladesh', 
+    'RU': 'Russia', 'BE': 'Belgium', 'BG': 'Bulgaria', 'BH': 'Bahrain', 'SA': 'Saudi Arabia', 
+    'BR': 'Brazil', 'SC': 'Seychelles', 'SE': 'Sweden', 'SG': 'Singapore', 'SI': 'Slovenia', 
+    'BY': 'Belarus', 'SK': 'Slovakia', 'BZ': 'Belize', 'CA': 'Canada', 'SV': 'El Salvador', 
+    'CH': 'Switzerland', 'SZ': 'Eswatini', 'CL': 'Chile', 'CN': 'China', 'CO': 'Colombia', 
+    'CR': 'Costa Rica', 'TH': 'Thailand', 'CY': 'Cyprus', 'CZ': 'Czech Republic', 
+    'TR': 'Turkey', 'DE': 'Germany', 'TW': 'Taiwan', 'TZ': 'Tanzania', 'DK': 'Denmark', 
+    'DO': 'Dominican Republic', 'UA': 'Ukraine', 'UG': 'Uganda', 'US': 'USA', 
+    'EC': 'Ecuador', 'EE': 'Estonia', 'EG': 'Egypt', 'UZ': 'Uzbekistan', 'ES': 'Spain', 
+    'VE': 'Venezuela', 'VG': 'British Virgin Islands', 'VN': 'Vietnam', 'FI': 'Finland', 
+    'FR': 'France', 'GB': 'UK', 'GE': 'Georgia', 'GH': 'Ghana', 'GN': 'Guinea', 
+    'GR': 'Greece', 'GT': 'Guatemala', 'HK': 'Hong Kong', 'HN': 'Honduras', 'HR': 'Croatia', 
+    'YE': 'Yemen', 'HU': 'Hungary', 'ID': 'Indonesia', 'IE': 'Ireland', 'IL': 'Israel', 
+    'IN': 'India', 'ZA': 'South Africa', 'IQ': 'Iraq', 'IR': 'Iran', 'IS': 'Iceland', 
+    'IT': 'Italy', 'ZW': 'Zimbabwe', 'JO': 'Jordan', 'JP': 'Japan', 'KE': 'Kenya', 
+    'KG': 'Kyrgyzstan', 'KH': 'Cambodia', 'KN': 'Saint Kitts and Nevis', 'KR': 'South Korea', 
+    'KZ': 'Kazakhstan', 'LB': 'Lebanon', 'LK': 'Sri Lanka', 'LT': 'Lithuania', 
+    'LU': 'Luxembourg', 'LV': 'Latvia', 'LY': 'Libya', 'MD': 'Moldova', 'MM': 'Myanmar', 
+    'MN': 'Mongolia', 'MT': 'Malta', 'MV': 'Maldives', 'MX': 'Mexico', 'MY': 'Malaysia', 
+    'MZ': 'Mozambique', 'NA': 'Namibia', 'NG': 'Nigeria', 'NI': 'Nicaragua', 'NL': 'Netherlands', 
+    'NO': 'Norway', 'NP': 'Nepal', 'NZ': 'New Zealand', 'OM': 'Oman', 'PA': 'Panama', 
+    'PE': 'Peru', 'PG': 'Papua New Guinea', 'PH': 'Philippines', 'PK': 'Pakistan', 'PL': 'Poland'
+}
 
 def categorize_attack(attack_val):
     if pd.isna(attack_val):
@@ -63,8 +64,6 @@ def categorize_attack(attack_val):
         return "Accidental/Error"
         
     return "Other/Unknown"
-
-
 
 def categorize_industry(val):
     if pd.isna(val):
@@ -107,3 +106,77 @@ def categorize_industry(val):
     if 'transport' in val_lower: return "Transport"
     
     return "Other"
+
+def categorize_continent(val):
+    if pd.isna(val):
+        return "Unknown"
+    
+    val_lower = str(val).lower().strip()
+    
+    # Priority Mapping
+    
+    # North America
+    if any(x in val_lower for x in ['north america', 'usa', 'canada']):
+        return "North America"
+        
+    # South America
+    if any(x in val_lower for x in ['south america']):
+        return "South America"
+        
+    # Europe
+    if any(x in val_lower for x in ['europe']):
+        return "Europe"
+        
+    # Asia
+    if any(x in val_lower for x in ['asia']):
+        return "Asia"
+        
+    # Africa
+    if any(x in val_lower for x in ['africa']):
+        return "Africa"
+        
+    # Australia
+    if any(x in val_lower for x in ['australia']):
+        return "Australia"
+        
+    return "Other"
+
+def categorize_nation_by_wealth(val):
+    if pd.isna(val):
+        return "Unknown"
+    
+    val_lower = str(val).lower().strip()
+    
+    # High Income
+    if any(x in val_lower for x in ['usa', 'united states', 'uk', 'united kingdom', 'germany', 'france', 'japan', 'canada', 'australia', 'sweden', 'singapore', 'switzerland', 'norway', 'south korea', 'uae', 'saudi arabia', 'israel', 'qatar', 'netherlands', 'belgium', 'austria', 'finland', 'ireland', 'new zealand']):
+        return "High Income"
+        
+    # Upper-Middle Income
+    if any(x in val_lower for x in ['china', 'brazil', 'russia', 'mexico', 'turkey', 'argentina', 'south africa', 'thailand', 'malaysia', 'serbia', 'romania', 'bulgaria']):
+        return "Upper-Middle Income"
+        
+    # Lower-Middle Income
+    if any(x in val_lower for x in ['india', 'indonesia', 'vietnam', 'philippines', 'ukraine', 'pakistan', 'egypt', 'nigeria', 'uzbekistan', 'el salvador', 'morocco']):
+        return "Lower-Middle Income"
+        
+    # Low Income
+    if any(x in val_lower for x in ['ethiopia', 'uganda', 'tanzania', 'afghanistan', 'yemen', 'zimbabwe', 'mali', 'niger', 'syria', 'sudan']):
+        return "Low Income"
+        
+    return "Other/Unknown"
+
+def categorize_west_or_est_country(val):
+    if pd.isna(val):
+        return "Unknown"
+    
+    val_lower = str(val).lower().strip()
+    
+    # Western
+    if any(x in val_lower for x in ['usa', 'united states', 'canada', 'uk', 'united kingdom', 'germany', 'france', 'italy', 'spain', 'australia', 'new zealand', 'europe', 'north america']):
+        return "Western"
+        
+    # Eastern
+    if any(x in val_lower for x in ['china', 'japan', 'korea', 'india', 'russia', 'asia', 'middle east', 'southeast asia', 'vietnam', 'thailand']):
+        return "Eastern"
+        
+    return "Other/Unknown"
