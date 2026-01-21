@@ -141,7 +141,7 @@ def categorize_continent(val):
         
     return "Other"
 
-def categorize_nation_by_wealth(val):
+def categorize_nation_by_welfare(val):
     if pd.isna(val):
         return "Unknown"
     

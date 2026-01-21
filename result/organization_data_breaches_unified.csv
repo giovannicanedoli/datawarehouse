@@ -9,7 +9,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 7,"Affinity Health Plan, Inc.",2013,344579,healthcare,lost / stolen media,Physical Loss,Healthcare
 8,Airtel,2019,320000000,telecommunications,poor security,Misconfiguration/Vulnerability,Telecommunications
 9,Air Canada,2018,20000,transport,hacked,Hacking/Intrusion,Transport
-10,Amazon Japan G.K.,2019,unknown,web,accidentally published,Accidental/Error,Technology
+10,Amazon Japan G.K.,2019,,web,accidentally published,Accidental/Error,Technology
 11,TD Ameritrade,2005,200000,financial,lost / stolen media,Physical Loss,Finance
 12,Ancestry.com,2021,300000,web,poor security,Misconfiguration/Vulnerability,Technology
 13,Animal Jam,2020,46000000,gaming,hacked,Hacking/Intrusion,Technology
@@ -24,7 +24,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 22,Ashley Madison,2015,32000000,web,hacked,Hacking/Intrusion,Technology
 23,AT&T,2008,113000,telecoms,lost / stolen computer,Physical Loss,Telecommunications
 24,AT&T,2010,114000,telecoms,hacked,Hacking/Intrusion,Telecommunications
-25,Atraf,2021,unknown,dating,hacked,Hacking/Intrusion,Other
+25,Atraf,2021,,dating,hacked,Hacking/Intrusion,Other
 26,Auction.co.kr,2008,18000000,web,hacked,Hacking/Intrusion,Technology
 27,Australian Immigration Department,2015,G20 world leaders,government,accidentally published,Accidental/Error,Government
 28,Australian National University,2019,19 years of data,academic,hacked,Hacking/Intrusion,Education
@@ -39,8 +39,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 37,Benesse,2014,35040000,educational services,hacked,Hacking/Intrusion,Education
 38,Betfair,2010,2300000,web,hacked,Hacking/Intrusion,Technology
 39,Bethesda Game Studios,2011,200000,gaming,hacked,Hacking/Intrusion,Technology
-40,Bethesda Game Studios,2018,,gaming,accidentally published,Accidental/Error,Technology
-41,Betsson Group,2020,unknown,gambling,unknown,Other/Unknown,Other
+41,Betsson Group,2020,,gambling,unknown,Other/Unknown,Other
 42,Blank Media Games,2018,7633234,gaming,hacked,Hacking/Intrusion,Technology
 43,Blizzard Entertainment,2012,14000000,gaming,hacked,Hacking/Intrusion,Technology
 44,BlueCross BlueShield of Tennessee,2009,1023209,healthcare,lost / stolen media,Physical Loss,Healthcare
@@ -82,7 +81,6 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 80,Defense Integrated Data Center (South Korea),2017,235 GB,military,hacked,Hacking/Intrusion,Technology
 81,Dedalus,2021,500000,health,poor security,Misconfiguration/Vulnerability,Healthcare
 82,Deloitte,2017,350 clients emails,"consulting, accounting",poor security,Misconfiguration/Vulnerability,Other
-83,Democratic National Committee,2016,19252,political,,Unknown,Technology
 84,US Department of Homeland Security,2016,30000,government,poor security,Misconfiguration/Vulnerability,Government
 85,Desjardins,2019,9700000,financial,inside job,Insider Threat,Finance
 86,Domino's Pizza (France),2014,600000,web,hacked,Hacking/Intrusion,Technology
@@ -103,12 +101,12 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 101,"Emergency Healthcare Physicians, Ltd.",2010,180111,healthcare,lost / stolen media,Physical Loss,Healthcare
 102,Emory Healthcare,2012,315000,healthcare,poor security,Misconfiguration/Vulnerability,Healthcare
 103,Equifax,2017,163119000,"financial, credit reporting",poor security,Misconfiguration/Vulnerability,Finance
-104,European Central Bank,2014,unknown,financial,hacked,Hacking/Intrusion,Finance
+104,European Central Bank,2014,,financial,hacked,Hacking/Intrusion,Finance
 105,Evernote,2013,50000000,web,hacked,Hacking/Intrusion,Technology
 106,Exactis,2018,340000000,data broker,poor security,Misconfiguration/Vulnerability,Technology
 107,Excellus BlueCross BlueShield,2015,10000000,healthcare,hacked,Hacking/Intrusion,Healthcare
 108,Experian - T-Mobile US,2015,15000000,telecoms,hacked,Hacking/Intrusion,Telecommunications
-109,EyeWire,2016,unknown,tech,lost / stolen computer,Physical Loss,Technology
+109,EyeWire,2016,,tech,lost / stolen computer,Physical Loss,Technology
 110,Facebook,2013,6000000,social network,accidentally published,Accidental/Error,Other
 111,Facebook,2018,50000000,social network,poor security,Misconfiguration/Vulnerability,Other
 112,Facebook,2019,540000000,social network,poor security,Misconfiguration/Vulnerability,Other
@@ -133,13 +131,13 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 131,Greek government,2012,9000000,government,hacked,Hacking/Intrusion,Government
 132,Grozio Chirurgija,2017,25000,healthcare,hacked,Hacking/Intrusion,Healthcare
 133,GS Caltex,2008,11100000,energy,inside job,Insider Threat,Energy
-134,Gyft,2016,unknown,web,hacked,Hacking/Intrusion,Technology
+134,Gyft,2016,,web,hacked,Hacking/Intrusion,Technology
 135,Hannaford Brothers Supermarket Chain,2007,4200000,retail,hacked,Hacking/Intrusion,Retail
 136,HauteLook,2018,28517244,retail,hacked,Hacking/Intrusion,Retail
 137,Health Net,2009,500000,healthcare,lost / stolen media,Physical Loss,Healthcare
 138,Health Net — IBM,2011,1900000,healthcare,lost / stolen media,Physical Loss,Healthcare
 139,Health Sciences Authority (Singapore),2019,808000,healthcare,poor security,Misconfiguration/Vulnerability,Healthcare
-140,Health Service Executive,2021,unknown,healthcare,unknown,Other/Unknown,Healthcare
+140,Health Service Executive,2021,,healthcare,unknown,Other/Unknown,Healthcare
 141,Heartland,2009,130000000,financial,hacked,Hacking/Intrusion,Finance
 142,Heathrow Airport,2017,2.5GB,transport,lost / stolen media,Physical Loss,Transport
 143,Hewlett Packard,2006,200000,"tech, retail",lost / stolen media,Physical Loss,Technology
@@ -162,7 +160,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 160,KDDI,2006,4000000,telecoms,hacked,Hacking/Intrusion,Telecommunications
 161,Kirkwood Community College,2013,125000,academic,hacked,Hacking/Intrusion,Education
 162,KM.RU,2016,1500000,web,hacked,Hacking/Intrusion,Technology
-163,Koodo Mobile,2020,unknown,mobile carrier,hacked,Hacking/Intrusion,Other
+163,Koodo Mobile,2020,,mobile carrier,hacked,Hacking/Intrusion,Other
 164,Korea Credit Bureau,2014,20000000,financial,inside job,Insider Threat,Finance
 165,Kroll Background America,2013,1000000,tech,hacked,Hacking/Intrusion,Technology
 166,KT Corporation,2012,8700000,telecoms,hacked,Hacking/Intrusion,Telecommunications
@@ -184,7 +182,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 182,Memorial Healthcare System,2011,102153,healthcare,lost / stolen media,Physical Loss,Healthcare
 183,Michaels,2014,3000000,retail,hacked,Hacking/Intrusion,Retail
 184,Microsoft,2019,250000000,tech,data exposed by misconfiguration,Misconfiguration/Vulnerability,Technology
-185,Microsoft Exchange servers,2021,unknown,software,zero-day vulnerabilities,Hacking/Intrusion,Technology
+185,Microsoft Exchange servers,2021,,software,zero-day vulnerabilities,Hacking/Intrusion,Technology
 186,Militarysingles.com,2012,163792,"web, military",accidentally published,Accidental/Error,Technology
 187,Ministry of Education (Chile),2008,6000000,government,accidentally published,Accidental/Error,Government
 188,Ministry of Health (Singapore),2019,14200,healthcare,poor security/inside job,Misconfiguration/Vulnerability,Healthcare
@@ -197,7 +195,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 195,Morinaga Confectionery,2022,1648922,online shopping,ransomware hacked,Hacking/Intrusion,Retail
 196,Mozilla,2014,76000,web,poor security,Misconfiguration/Vulnerability,Technology
 197,MyHeritage,2018,92283889,genealogy,unknown,Other/Unknown,Other
-198,NASDAQ,2014,unknown,financial,hacked,Hacking/Intrusion,Finance
+198,NASDAQ,2014,,financial,hacked,Hacking/Intrusion,Finance
 199,Natural Grocers,2015,93 stores,retail,hacked,Hacking/Intrusion,Retail
 200,"NEC Networks, LLC",2021,1600000,healthcare,hacked,Hacking/Intrusion,Healthcare
 201,Neiman Marcus,2014,1100000,retail,hacked,Hacking/Intrusion,Retail
@@ -214,12 +212,12 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 212,Nival Networks,2016,1500000,gaming,hacked,Hacking/Intrusion,Technology
 213,Norwegian Tax Administration,2008,3950000,government,accidentally published,Accidental/Error,Government
 214,Now:Pensions,2020,30000,financial,rogue contractor,Hacking/Intrusion,Finance
-215,Ofcom,2016,unknown,telecom,inside job,Insider Threat,Telecommunications
+215,Ofcom,2016,,telecom,inside job,Insider Threat,Telecommunications
 216,US Office of Personnel Management,2015,21500000,government,hacked,Hacking/Intrusion,Government
 217,Office of the Texas Attorney General,2012,6500000,government,accidentally published,Accidental/Error,Government
 218,Ohio State University,2010,760000,academic,hacked,Hacking/Intrusion,Education
 219,Orbitz,2018,880000,web,hacked,Hacking/Intrusion,Technology
-220,Oregon Department of Transportation,2011,unknown,government,poor security,Misconfiguration/Vulnerability,Government
+220,Oregon Department of Transportation,2011,,government,poor security,Misconfiguration/Vulnerability,Government
 221,OVH,2013,undisclosed,web,hacked,Hacking/Intrusion,Technology
 222,Patreon,2015,2300000,web,hacked,Hacking/Intrusion,Technology
 223,PayPay,2020,20076016,QR code payment,"improper setting, hacked",Hacking/Intrusion,Other
@@ -231,10 +229,10 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 229,Rakuten,2020,1381735,web,"improper setting, hacked",Hacking/Intrusion,Technology
 230,Rambler.ru,2012,98167935,web,hacked,Hacking/Intrusion,Technology
 231,RBS Worldpay,2008,1500000,financial,hacked,Hacking/Intrusion,Finance
-232,Reddit,2018,unknown,web,hacked,Hacking/Intrusion,Technology
+232,Reddit,2018,,web,hacked,Hacking/Intrusion,Technology
 233,Restaurant Depot,2011,200000,retail,hacked,Hacking/Intrusion,Retail
 234,RockYou!,2009,32000000,"web, gaming",hacked,Hacking/Intrusion,Technology
-235,Rosen Hotels,2016,unknown,hotel,hacked,Hacking/Intrusion,Other
+235,Rosen Hotels,2016,,hotel,hacked,Hacking/Intrusion,Other
 236,"Sakai City, Japan",2015,680000,government,inside job,Insider Threat,Government
 237,San Francisco Public Utilities Commission,2011,180000,government,hacked,Hacking/Intrusion,Government
 238,Scottrade,2015,4600000,financial,hacked,Hacking/Intrusion,Finance
@@ -242,7 +240,7 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 240,"Seacoast Radiology, PA",2010,231400,healthcare,hacked,Hacking/Intrusion,Healthcare
 241,Sega,2011,1290755,gaming,hacked,Hacking/Intrusion,Technology
 242,Service Personnel and Veterans Agency (UK),2008,50500,government,lost / stolen media,Physical Loss,Government
-243,ShopBack,2020,unknown,tech,hacked,Hacking/Intrusion,Technology
+243,ShopBack,2020,,tech,hacked,Hacking/Intrusion,Technology
 244,SingHealth,2018,1500000,"government, database",hacked,Hacking/Intrusion,Technology
 245,Slack,2015,500000,tech,poor security,Misconfiguration/Vulnerability,Technology
 246,SlickWraps,2020,377428,phone accessories,poor security,Misconfiguration/Vulnerability,Other
@@ -287,13 +285,13 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 285,Truecaller,2019,299055000,Telephone directory,unknown,Other/Unknown,Other
 286,Trump Hotels,2014,8 locations,hotel,hacked,Hacking/Intrusion,Other
 287,Tumblr,2013,65469298,web,hacked,Hacking/Intrusion,Technology
-288,Twitch,2015,unknown,tech,hacked,Hacking/Intrusion,Technology
-289,Twitch,2021,unknown,tech,hacked/misconfiguration,Hacking/Intrusion,Technology
+288,Twitch,2015,,tech,hacked,Hacking/Intrusion,Technology
+289,Twitch,2021,,tech,hacked/misconfiguration,Hacking/Intrusion,Technology
 290,Twitter,2013,250000,web,hacked,Hacking/Intrusion,Technology
-291,Typeform,2018,unknown,tech,poor security,Misconfiguration/Vulnerability,Technology
+291,Typeform,2018,,tech,poor security,Misconfiguration/Vulnerability,Technology
 292,Uber,2014,50000,tech,poor security,Misconfiguration/Vulnerability,Technology
 293,Uber,2017,57000000,transport,hacked,Hacking/Intrusion,Transport
-294,Ubisoft,2013,unknown,gaming,hacked,Hacking/Intrusion,Technology
+294,Ubisoft,2013,,gaming,hacked,Hacking/Intrusion,Technology
 295,Ubuntu,2013,2000000,tech,hacked,Hacking/Intrusion,Technology
 296,"UCLA Medical Center, Santa Monica",2015,4500000,healthcare,hacked,Hacking/Intrusion,Healthcare
 297,UK Home Office,2008,84000,government,lost / stolen media,Physical Loss,Government
@@ -333,10 +331,9 @@ Unnamed: 0,Entity,Year,Records,Organization type,Method,Unified_Attack_Category,
 331,Wattpad,2020,270000000,web,hacked,Hacking/Intrusion,Technology
 332,Wawa (company),2020,30000000,retail,hacked,Hacking/Intrusion,Retail
 333,Weebly,2016,43430316,web,hacked,Hacking/Intrusion,Technology
-334,Wendy's,2015,unknown,restaurant,hacked,Hacking/Intrusion,Other
+334,Wendy's,2015,,restaurant,hacked,Hacking/Intrusion,Other
 335,Westpac,2019,98000,financial,hacked,Hacking/Intrusion,Finance
-336,Woodruff Arts Center,2019,unknown,arts group,poor security,Misconfiguration/Vulnerability,Other
-337,WordPress,2018,,web service,hacked,Hacking/Intrusion,Technology
+336,Woodruff Arts Center,2019,,arts group,poor security,Misconfiguration/Vulnerability,Other
 338,Writerspace.com,2011,62000,web,hacked,Hacking/Intrusion,Technology
 339,Xat.com,2015,6054459,web,social engineering,Social Engineering,Technology
 340,Yahoo,2013,3000000000,web,hacked,Hacking/Intrusion,Technology

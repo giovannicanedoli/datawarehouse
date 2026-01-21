@@ -1,5 +1,5 @@
 import pandas as pd
-from utils import country_map, categorize_attack, categorize_industry
+from utils import country_map, categorize_attack, categorize_industry, categorize_nation_by_welfare, categorize_continent, categorize_west_or_est_country
 
 def main():
     DEBUG = 0
@@ -40,7 +40,7 @@ def main():
 
     # Add geography
     df3_unified["Continent"] = df3_unified["Country"].apply(categorize_continent)
-    df3_unified["Nation_Wealth"] = df3_unified["Country"].apply(categorize_nation_by_wealth)
+    df3_unified["Nation_Wealth"] = df3_unified["Country"].apply(categorize_nation_by_welfare)
     df3_unified["West_or_East"] = df3_unified["Country"].apply(categorize_west_or_est_country)
 
     # Cleaning unused data
@@ -58,9 +58,14 @@ def main():
     # df2 uses 'Attack Type'
     df2['Unified_Attack_Category'] = df2['Attack Type'].apply(categorize_attack)
     df2['Unified_Industry'] = df2['Target Industry'].apply(categorize_industry)
+    df2["Continent"] = df2["Country"].apply(categorize_continent)
+    df2["Nation_Wealth"] = df2["Country"].apply(categorize_nation_by_welfare)
+    df2["West_or_East"] = df2["Country"].apply(categorize_west_or_est_country)
 
     #remove null values from df1
     df1 = df1.dropna()
+
+    # df1['Records'] = df1['Records'].replace('unknown', '')
 
     print("Saving outputs...")
     
@@ -68,10 +73,6 @@ def main():
     df2.to_csv("result/Global_Cybersecurity_Threats_unified.csv", index=False)
     df3_unified.to_csv("result/LossFromNetCrime_unified.csv", index=False)
 
-    if DEBUG:
-        print("Done.")
-        print("\nSample Mapping:")
-        print(dim_df.sample(10 if len(dim_df) > 10 else len(dim_df)))
 
 
 if __name__ == "__main__":
