@@ -1,6 +1,5 @@
 import pandas as pd
-from utils import country_map, categorize_attack, categorize_industry, categorize_nation_by_welfare, categorize_continent, categorize_west_or_est_country
-
+from utils import *
 def main():
     DEBUG = 0
     if DEBUG:
@@ -9,7 +8,11 @@ def main():
 
         print("\n=== df2 (Global_Cybersecurity_Threats) Attack Type unique values ===")
         print(df2['Attack Type'].unique())
-        
+
+        countries = set(df2['Country'].unique())
+        countries_2 = set(df3['Country'].unique())
+        print(f"Unique countries in the dataset: {countries.union(countries_2)}")
+            
 
     try:
         df1 = pd.read_csv("data/organization_data_breaches.csv")
@@ -21,7 +24,7 @@ def main():
 
     print("Processing df3 (Net Crime)...")
     df3['Country'] = df3['Country'].map(country_map)
-    
+
     # Reshape df3: Melt and Pivot to get Country, Year, Complaints, Losses
     print("Standardizing Time for df3...")
     df3_melted = df3.melt(id_vars=['Country'], var_name='Metric', value_name='Value')
@@ -42,6 +45,10 @@ def main():
     df3_unified["Continent"] = df3_unified["Country"].apply(categorize_continent)
     df3_unified["Nation_Wealth"] = df3_unified["Country"].apply(categorize_nation_by_welfare)
     df3_unified["West_or_East"] = df3_unified["Country"].apply(categorize_west_or_est_country)
+    
+    # Add Time Features to df3
+    df3_unified['Pandemic_Era'] = df3_unified['Year'].apply(get_pandemic_era)
+    df3_unified['Is_Leap_Year'] = df3_unified['Year'].apply(is_leap_year)
 
     # Cleaning unused data
     print("Cleaning unused data...")
@@ -50,17 +57,41 @@ def main():
     
     
     print("Processing df1 (Breaches)...")
+    
+    # Convert Year to list of years and explode
+    df1['Year'] = df1['Year'].apply(split_year_range)
+    #trasforming the list of years into multiple rows egs [2019, 2020] -> [2019], [2020]
+    df1 = df1.explode('Year')
+    
+    # Clean Records (remove 'unknown') and extract numbers
+    df1['Records'] = df1['Records'].apply(remove_unknown_entries)
+    # Extract numbers (remove commas, take first sequence of digits)
+    # This turns "9,000,000 (approx)" into "9000000"
+    df1['Records'] = df1['Records'].astype(str).str.replace(',', '', regex=False).str.extract(r'(\d+)', expand=False)
+    # Fill NaNs with 0 to allow SUM
+    df1['Records'] = pd.to_numeric(df1['Records'], errors='coerce').fillna(0).astype(int)
+    
     # df1 uses 'Method'
     df1['Unified_Attack_Category'] = df1['Method'].apply(categorize_attack)
     df1['Unified_Industry'] = df1['Organization type'].apply(categorize_industry)
+    # Add Time Features to df1
+    df1['Pandemic_Era'] = df1['Year'].apply(get_pandemic_era)
+    df1['Is_Leap_Year'] = df1['Year'].apply(is_leap_year)
     
     print("Processing df2 (Global Threats)...")
     # df2 uses 'Attack Type'
     df2['Unified_Attack_Category'] = df2['Attack Type'].apply(categorize_attack)
     df2['Unified_Industry'] = df2['Target Industry'].apply(categorize_industry)
+
+
     df2["Continent"] = df2["Country"].apply(categorize_continent)
     df2["Nation_Wealth"] = df2["Country"].apply(categorize_nation_by_welfare)
     df2["West_or_East"] = df2["Country"].apply(categorize_west_or_est_country)
+
+
+    # Add Time Features to df2
+    df2['Pandemic_Era'] = df2['Year'].apply(get_pandemic_era)
+    df2['Is_Leap_Year'] = df2['Year'].apply(is_leap_year)
 
     #remove null values from df1
     df1 = df1.dropna()

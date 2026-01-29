@@ -1,5 +1,7 @@
-[ ] adjust semantics of records: what to do when they are Unknown?
-[ ] add lossess and constraints
+[x] adjust semantics of records: what to do when they are Unknown?
+[x] cambiare questa insert into INSERT INTO entity_dimension (entity_name, industry, org_type, stolen_records) VALUES ('Unknown', 'Unknown', 'Unknown', 'Unknown') ON CONFLICT DO NOTHING;
+[x] add lossess and constraint
+[x] add leap year
 [ ] add a few queries: rebuild a cube and so on
 [ ] add complexity of the hierarchies
 [ ] add ER of the reconcield layer

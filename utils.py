@@ -106,39 +106,58 @@ def categorize_industry(val):
     if 'transport' in val_lower: return "Transport"
     
     return "Other"
+import pandas as pd
 
 def categorize_continent(val):
     if pd.isna(val):
         return "Unknown"
     
-    val_lower = str(val).lower().strip()
+    val_clean = str(val).strip()
     
-    # Priority Mapping
-    
-    # North America
-    if any(x in val_lower for x in ['north america', 'usa', 'canada']):
-        return "North America"
-        
-    # South America
-    if any(x in val_lower for x in ['south america']):
-        return "South America"
-        
-    # Europe
-    if any(x in val_lower for x in ['europe']):
-        return "Europe"
-        
-    # Asia
-    if any(x in val_lower for x in ['asia']):
-        return "Asia"
-        
-    # Africa
-    if any(x in val_lower for x in ['africa']):
-        return "Africa"
-        
-    # Australia
-    if any(x in val_lower for x in ['australia']):
-        return "Australia"
-        
+    # Define Continent Sets
+    continents = {
+        "North America": {
+            'USA', 'Canada', 'Mexico', 'Puerto Rico', 'Guatemala', 'Panama', 
+            'Honduras', 'Costa Rica', 'El Salvador', 'Dominican Republic', 
+            'Belize', 'British Virgin Islands', 'Saint Kitts and Nevis'
+        },
+        "South America": {
+            'Brazil', 'Argentina', 'Colombia', 'Chile', 'Peru', 'Venezuela', 
+            'Ecuador', 'Paraguay'
+        },
+        "Europe": {
+            'UK', 'Italy', 'Germany', 'France', 'Spain', 'Netherlands', 'Russia', 
+            'Ukraine', 'Poland', 'Sweden', 'Norway', 'Finland', 'Denmark', 
+            'Ireland', 'Belgium', 'Switzerland', 'Austria', 'Greece', 'Portugal', 
+            'Czech Republic', 'Slovakia', 'Hungary', 'Romania', 'Bulgaria', 
+            'Serbia', 'Croatia', 'Slovenia', 'Lithuania', 'Latvia', 'Estonia', 
+            'Belarus', 'Moldova', 'Albania', 'Bosnia and Herzegovina', 'Iceland', 
+            'Luxembourg', 'Malta', 'Cyprus'
+        },
+        "Asia": {
+            'China', 'Japan', 'India', 'South Korea', 'Taiwan', 'Hong Kong', 
+            'Singapore', 'Malaysia', 'Thailand', 'Vietnam', 'Philippines', 
+            'Indonesia', 'Pakistan', 'Bangladesh', 'Myanmar', 'Sri Lanka', 
+            'Nepal', 'Maldives', 'Kazakhstan', 'Uzbekistan', 'Kyrgyzstan', 
+            'Georgia', 'Armenia', 'Azerbaijan', 'Israel', 'Palestine', 'Jordan', 
+            'Lebanon', 'Iraq', 'Saudi Arabia', 'United Arab Emirates', 'Oman', 
+            'Bahrain', 'Yemen', 'Iran', 'Turkey', 'Cambodia'
+        },
+        "Africa": {
+            'South Africa', 'Nigeria', 'Kenya', 'Egypt', 'Ghana', 'Tanzania', 
+            'Uganda', 'Zimbabwe', 'Namibia', 'Angola', 'Mozambique', 'Eswatini', 
+            'Seychelles', 'Libya', 'Guinea'
+        },
+        "Oceania": {
+            'Australia', 'New Zealand', 'Papua New Guinea'
+        }
+    }
+
+    # Direct match check
+    for continent, country_list in continents.items():
+        if val_clean in country_list:
+            return continent
+            
     return "Other"
 
 def categorize_nation_by_welfare(val):
@@ -180,3 +199,61 @@ def categorize_west_or_est_country(val):
         return "Eastern"
         
     return "Other/Unknown"
+def split_year_range(val):
+    """
+    Splits 'YYYY-YYYY' into a list of years, or returns single year as list.
+    """
+    if pd.isna(val):
+        return [val]
+    if '-' not in str(val) and "and" not in str(val):
+        return [val]
+    if "and" in str(val):
+        s_val = str(val).split('and')
+        return [int(s_val[0].strip()), int(s_val[1].strip())]
+    # - in the string
+    s_val = str(val).split('-')
+    # Create range inclusive
+    return list(range(int(s_val[0]), int(s_val[1]) + 1))
+def get_pandemic_era(year):
+    """
+    Distinguishes if a year is pre-pandemic or post-pandemic.
+    Pandemic start is considered 2020.
+    """
+    if pd.isna(year):
+        return "Unknown"
+            
+    year_int = int(year)
+        
+    if year_int < 2020:
+        return "Pre-Pandemic"
+    else:
+        return "Post-Pandemic"
+def is_leap_year(year):
+
+    """
+    Checks if a year is a leap year.
+    Returns True/False or 'Unknown' on error.
+    """
+    if pd.isna(year):
+        return "Unknown"
+        
+    year_int = int(year)
+    
+    # Leap year logic: divisible by 4, not by 100 unless also by 400
+    if (year_int % 4 == 0 and year_int % 100 != 0) or (year_int % 400 == 0):
+        return True
+    else:
+        return False
+
+def remove_unknown_entries(val):
+    """
+    Replaces 'unknown' (case-insensitive) values with None.
+    """
+    if pd.isna(val):
+        return None
+        
+    s_val = str(val).strip().lower()
+    if s_val == "unknown" or s_val == "":
+        return None
+        
+    return val
