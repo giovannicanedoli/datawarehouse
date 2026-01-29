@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS entity_dimension (
     entity_name TEXT,
     industry TEXT,
     org_type TEXT,
-    stolen_records TEXT
+    stolen_records BIGINT
 );
 
 -- 4. Create Fact Table
@@ -93,9 +93,9 @@ CREATE TABLE IF NOT EXISTS cyber_security_attack (
     defense_id INT NOT NULL,
     entity_id INT NOT NULL,
     time_id INT NOT NULL,
+    complaints BIGINT,
+    losses BIGINT,
     affected_users BIGINT,
-    financial_loss BIGINT,
-    complaints INT,
     records_lost BIGINT,
     resolution_time_hours INT,
     PRIMARY KEY (geo_id, attack_id, time_id, defense_id, entity_id),
@@ -121,47 +121,64 @@ SELECT DISTINCT year, pandemic_era, is_leap_year FROM staging_breaches
 UNION
 SELECT DISTINCT year, pandemic_era, is_leap_year FROM staging_net_crime;
 
-INSERT INTO attack_dimension(attack_type, attack_source, vulnerability_type, unified_category)
+INSERT INTO attack_dimension (attack_type, attack_source, vulnerability_type, unified_category)
 SELECT DISTINCT attack_type, attack_source, vulnerability_type, unified_attack_category
-FROM staging_global_threats;
+FROM staging_global_threats s
+WHERE NOT EXISTS (
+    SELECT 1 FROM attack_dimension a 
+    WHERE a.attack_type = s.attack_type 
+      AND a.attack_source = s.attack_source
+      AND a.vulnerability_type = s.vulnerability_type
+);
 
 INSERT INTO defense_dimension (defense_mechanism)
 SELECT DISTINCT defense_mechanism FROM staging_global_threats WHERE defense_mechanism IS NOT NULL;
 
 INSERT INTO entity_dimension (entity_name, industry, org_type, stolen_records)
-SELECT DISTINCT 
-    entity, 
+SELECT DISTINCT ON (entity)
+    entity,
     unified_industry, 
     organization_type,
     records
-FROM staging_breaches;
+FROM staging_breaches s;
 
 
 
+
+WITH summary_net_crime AS (
+    SELECT 
+        year, 
+        country, 
+        SUM(complaints) as total_complaints,
+        SUM(losses) as total_losses
+    FROM staging_net_crime
+    GROUP BY year, country
+)
 INSERT INTO cyber_security_attack (
     geo_id, attack_id, defense_id, entity_id, time_id, 
-    affected_users, financial_loss, complaints, records_lost, resolution_time_hours
+    complaints, losses, affected_users, resolution_time_hours, records_lost
 )
-SELECT 
+SELECT DISTINCT 
     g.geo_id, 
-    a.attack_id, 
+    a.attack_id,
     d.defense_id, 
-    COALESCE(e.entity_id, (SELECT entity_id FROM entity_dimension WHERE entity_name = 'Unknown' LIMIT 1)),
+    e.entity_id,
     t.time_id, 
-    SUM(s.affected_users), 
-    SUM(n.losses),      
-    SUM(n.complaints),      
-    SUM(b.records),    
-    AVG(s.resolution_time_hours)::INT
+    n.total_complaints, 
+    n.total_losses,
+    s.affected_users,
+    s.resolution_time_hours,
+    b.records
 FROM staging_global_threats s
-JOIN staging_breaches b ON s.year = b.year
-JOIN staging_net_crime n ON s.year = n.year
 JOIN geography_dimension g ON s.country = g.country
 JOIN attack_dimension a    ON s.attack_type = a.attack_type
 JOIN time_dimension t      ON s.year = t.year
 JOIN defense_dimension d   ON s.defense_mechanism = d.defense_mechanism
-LEFT JOIN entity_dimension e ON e.entity_name = b.entity
-GROUP BY g.geo_id, a.attack_id, d.defense_id, e.entity_id, t.time_id;
+LEFT JOIN summary_net_crime n ON s.country = n.country AND s.year = n.year
+LEFT JOIN staging_breaches b ON s.year = b.year 
+    AND s.unified_industry = b.unified_industry  -- Join on industry match
+JOIN entity_dimension e ON b.entity = e.entity_name
+ON CONFLICT (geo_id, attack_id, time_id, defense_id, entity_id) DO NOTHING;
 
 DO $$
 BEGIN

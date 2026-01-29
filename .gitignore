@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+jspm_packages/
+venv/
+env/
+__pycache__/
+.pytest_cache/
+
+# Build and Distribution
+dist/
+build/
+out/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and Databases
+*.log
+*.sqlite
+*.db
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Temporary files
+tmp/
+temp/
