@@ -12,7 +12,7 @@ CREATE TEMP TABLE IF NOT EXISTS staging_global_threats (
     unified_attack_category TEXT,
     unified_industry TEXT,
     continent TEXT,     
-    nation_wealth TEXT, 
+    nation_welfare TEXT, 
     west_or_east TEXT,
     pandemic_era TEXT,
     is_leap_year BOOLEAN
@@ -24,7 +24,7 @@ CREATE TEMP TABLE IF NOT EXISTS staging_net_crime (
     complaints BIGINT,
     losses BIGINT,
     continent TEXT,     
-    nation_wealth TEXT, 
+    nation_welfare TEXT, 
     west_or_east TEXT,
     pandemic_era TEXT,
     is_leap_year BOOLEAN 
@@ -40,8 +40,8 @@ CREATE TEMP TABLE IF NOT EXISTS staging_breaches (
     unified_attack_category TEXT,
     unified_industry TEXT,
     pandemic_era TEXT,
-    is_leap_year BOOLEAN
-    -- Note: No country/continent here based on your previous error
+    is_leap_year BOOLEAN,
+    country TEXT
 );
 
 -- 2. Load Data into Staging
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS geography_dimension (
     geo_id SERIAL PRIMARY KEY,
     country TEXT,
     continent TEXT,
-    nation_wealth TEXT,
+    nation_welfare TEXT,
     west_or_east TEXT
 );
 
@@ -75,7 +75,8 @@ CREATE TABLE IF NOT EXISTS attack_dimension (
 
 CREATE TABLE IF NOT EXISTS defense_dimension (
     defense_id SERIAL PRIMARY KEY,
-    defense_mechanism TEXT
+    defense_mechanism TEXT,
+    -- vulnerability_type TEXT
 );
 
 CREATE TABLE IF NOT EXISTS entity_dimension (
@@ -106,13 +107,16 @@ CREATE TABLE IF NOT EXISTS cyber_security_attack (
     FOREIGN KEY (time_id) REFERENCES time_dimension(time_id)
 );
 
--- 5. Insert Dimensions (Using DISTINCT to avoid duplicates)
-INSERT INTO geography_dimension (country, continent, nation_wealth, west_or_east)
-SELECT DISTINCT country, continent, nation_wealth, west_or_east
+-- 5. Insert Dimensions
+INSERT INTO geography_dimension (country, continent, nation_welfare, west_or_east) 
+SELECT DISTINCT country, continent, nation_welfare, west_or_east 
 FROM staging_global_threats
 UNION 
-SELECT DISTINCT country, continent, nation_wealth, west_or_east
-FROM staging_net_crime;
+SELECT DISTINCT country, continent, nation_welfare, west_or_east 
+FROM staging_net_crime
+UNION
+SELECT DISTINCT country, continent, nation_welfare, west_or_east
+FROM staging_breaches;
 
 INSERT INTO time_dimension (year, pandemic_era, is_leap_year)
 SELECT DISTINCT year, pandemic_era, is_leap_year FROM staging_global_threats
@@ -142,8 +146,7 @@ SELECT DISTINCT ON (entity)
     records
 FROM staging_breaches s;
 
-
-
+-- 6. Insert Fact Table Data
 
 WITH summary_net_crime AS (
     SELECT 
@@ -175,10 +178,9 @@ JOIN attack_dimension a    ON s.attack_type = a.attack_type
 JOIN time_dimension t      ON s.year = t.year
 JOIN defense_dimension d   ON s.defense_mechanism = d.defense_mechanism
 LEFT JOIN summary_net_crime n ON s.country = n.country AND s.year = n.year
-LEFT JOIN staging_breaches b ON s.year = b.year 
-    AND s.unified_industry = b.unified_industry  -- Join on industry match
-JOIN entity_dimension e ON b.entity = e.entity_name
-ON CONFLICT (geo_id, attack_id, time_id, defense_id, entity_id) DO NOTHING;
+-- LEFT JOIN staging_breaches b ON s.year = b.year 
+--     AND s.unified_industry = b.unified_industry
+-- JOIN entity_dimension e ON b.entity = e.entity_name
 
 DO $$
 BEGIN

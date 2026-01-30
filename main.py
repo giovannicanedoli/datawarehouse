@@ -78,11 +78,20 @@ def main():
     df1['Pandemic_Era'] = df1['Year'].apply(get_pandemic_era)
     df1['Is_Leap_Year'] = df1['Year'].apply(is_leap_year)
     
+    # Add country Feature to df1
+
+    df1["Country"] = df1["Entity"].map(entities_locations)
+    df1["Continent"] = df1["Country"].apply(categorize_continent)
+    df1["Nation_Wealth"] = df1["Country"].apply(categorize_nation_by_welfare)
+    df1["West_or_East"] = df1["Country"].apply(categorize_west_or_est_country)
+
+    print("map confirmed")
+
+    
     print("Processing df2 (Global Threats)...")
     # df2 uses 'Attack Type'
     df2['Unified_Attack_Category'] = df2['Attack Type'].apply(categorize_attack)
     df2['Unified_Industry'] = df2['Target Industry'].apply(categorize_industry)
-
 
     df2["Continent"] = df2["Country"].apply(categorize_continent)
     df2["Nation_Wealth"] = df2["Country"].apply(categorize_nation_by_welfare)
