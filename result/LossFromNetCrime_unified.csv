@@ -1,703 +1,703 @@
-Country,Year,Complaints,Losses,Continent,Nation_Wealth,West_or_East
-Afghanistan,2019,612,9218912,Other,Low Income,Other/Unknown
-Afghanistan,2020,1095,8257595,Other,Low Income,Other/Unknown
-Afghanistan,2021,1226,17334907,Other,Low Income,Other/Unknown
-Afghanistan,2022,982,36751138,Other,Low Income,Other/Unknown
-Afghanistan,2023,1150,38527355,Other,Low Income,Other/Unknown
-Afghanistan,2024,1373,37684396,Other,Low Income,Other/Unknown
-Albania,2019,1261,15433066,Other,Other/Unknown,Other/Unknown
-Albania,2020,2450,15481216,Other,Other/Unknown,Other/Unknown
-Albania,2021,2114,25528929,Other,Other/Unknown,Other/Unknown
-Albania,2022,1996,37709595,Other,Other/Unknown,Other/Unknown
-Albania,2023,2178,46707757,Other,Other/Unknown,Other/Unknown
-Albania,2024,2218,56062725,Other,Other/Unknown,Other/Unknown
-Angola,2019,730,4218960,Other,Other/Unknown,Other/Unknown
-Angola,2020,1471,4388316,Other,Other/Unknown,Other/Unknown
-Angola,2021,1207,8467667,Other,Other/Unknown,Other/Unknown
-Angola,2022,1222,13342081,Other,Other/Unknown,Other/Unknown
-Angola,2023,1336,15792180,Other,Other/Unknown,Other/Unknown
-Angola,2024,1438,18499615,Other,Other/Unknown,Other/Unknown
-Argentina,2019,4555,106144702,Other,Upper-Middle Income,Other/Unknown
-Argentina,2020,6055,96414427,Other,Upper-Middle Income,Other/Unknown
-Argentina,2021,8548,212672747,Other,Upper-Middle Income,Other/Unknown
-Argentina,2022,6752,399595418,Other,Upper-Middle Income,Other/Unknown
-Argentina,2023,8511,372985785,Other,Upper-Middle Income,Other/Unknown
-Argentina,2024,8857,448223952,Other,Upper-Middle Income,Other/Unknown
-Armenia,2019,2402,25413556,Other,Other/Unknown,Other/Unknown
-Armenia,2020,3290,38075278,Other,Other/Unknown,Other/Unknown
-Armenia,2021,3551,44322212,Other,Other/Unknown,Other/Unknown
-Armenia,2022,3656,90439473,Other,Other/Unknown,Other/Unknown
-Armenia,2023,5041,114193013,Other,Other/Unknown,Other/Unknown
-Armenia,2024,3466,111820067,Other,Other/Unknown,Other/Unknown
-Australia,2019,32061,286422142,Australia,High Income,Western
-Australia,2020,55024,399593060,Australia,High Income,Western
-Australia,2021,54330,664501941,Australia,High Income,Western
-Australia,2022,43610,974136831,Australia,High Income,Western
-Australia,2023,60204,1241532793,Australia,High Income,Western
-Australia,2024,64390,1491968034,Australia,High Income,Western
-Austria,2019,6942,47306368,Other,High Income,Other/Unknown
-Austria,2020,10963,41464758,Other,High Income,Other/Unknown
-Austria,2021,15412,116199865,Other,High Income,Other/Unknown
-Austria,2022,11239,133170619,Other,High Income,Other/Unknown
-Austria,2023,9614,163158856,Other,High Income,Other/Unknown
-Austria,2024,14534,145551079,Other,High Income,Other/Unknown
-Azerbaijan,2019,1991,26944580,Other,Other/Unknown,Other/Unknown
-Azerbaijan,2020,4183,39283188,Other,Other/Unknown,Other/Unknown
-Azerbaijan,2021,4117,55559557,Other,Other/Unknown,Other/Unknown
-Azerbaijan,2022,4385,66376883,Other,Other/Unknown,Other/Unknown
-Azerbaijan,2023,4967,85199840,Other,Other/Unknown,Other/Unknown
-Azerbaijan,2024,5706,78785876,Other,Other/Unknown,Other/Unknown
-Bahrain,2019,4666,64103022,Other,Other/Unknown,Other/Unknown
-Bahrain,2020,10094,93786879,Other,Other/Unknown,Other/Unknown
-Bahrain,2021,10917,131102183,Other,Other/Unknown,Other/Unknown
-Bahrain,2022,10208,183388664,Other,Other/Unknown,Other/Unknown
-Bahrain,2023,11853,234614837,Other,Other/Unknown,Other/Unknown
-Bahrain,2024,12837,277949474,Other,Other/Unknown,Other/Unknown
-Bangladesh,2019,11970,202462502,Other,Other/Unknown,Other/Unknown
-Bangladesh,2020,16637,257563277,Other,Other/Unknown,Other/Unknown
-Bangladesh,2021,21137,400343277,Other,Other/Unknown,Other/Unknown
-Bangladesh,2022,25822,673263063,Other,Other/Unknown,Other/Unknown
-Bangladesh,2023,26652,522834001,Other,Other/Unknown,Other/Unknown
-Bangladesh,2024,21185,764697415,Other,Other/Unknown,Other/Unknown
-Belarus,2019,5622,40335091,Other,Other/Unknown,Other/Unknown
-Belarus,2020,8033,45133084,Other,Other/Unknown,Other/Unknown
-Belarus,2021,8498,109694772,Other,Other/Unknown,Other/Unknown
-Belarus,2022,8395,143916635,Other,Other/Unknown,Other/Unknown
-Belarus,2023,8399,163144740,Other,Other/Unknown,Other/Unknown
-Belarus,2024,9192,171624833,Other,Other/Unknown,Other/Unknown
-Belgium,2019,6275,61314011,Other,High Income,Other/Unknown
-Belgium,2020,10620,81868291,Other,High Income,Other/Unknown
-Belgium,2021,11842,142566044,Other,High Income,Other/Unknown
-Belgium,2022,10859,217821448,Other,High Income,Other/Unknown
-Belgium,2023,11848,184239517,Other,High Income,Other/Unknown
-Belgium,2024,12375,303148050,Other,High Income,Other/Unknown
-Belize,2019,323,2498015,Other,Other/Unknown,Other/Unknown
-Belize,2020,548,4146715,Other,Other/Unknown,Other/Unknown
-Belize,2021,612,5194911,Other,Other/Unknown,Other/Unknown
-Belize,2022,570,8430382,Other,Other/Unknown,Other/Unknown
-Belize,2023,723,9110927,Other,Other/Unknown,Other/Unknown
-Belize,2024,572,12538008,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2019,7100,48232941,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2020,11871,35153818,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2021,13041,55776221,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2022,11519,132423841,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2023,13156,148850878,Other,Other/Unknown,Other/Unknown
-Bosnia and Herzegovina,2024,13605,191209005,Other,Other/Unknown,Other/Unknown
-Brazil,2019,113294,571530336,Other,Upper-Middle Income,Other/Unknown
-Brazil,2020,163299,749658021,Other,Upper-Middle Income,Other/Unknown
-Brazil,2021,174117,894516056,Other,Upper-Middle Income,Other/Unknown
-Brazil,2022,155028,1644488725,Other,Upper-Middle Income,Other/Unknown
-Brazil,2023,158423,1808030603,Other,Upper-Middle Income,Other/Unknown
-Brazil,2024,248765,2590565434,Other,Upper-Middle Income,Other/Unknown
-British Virgin Islands,2019,813,14172668,Other,Other/Unknown,Other/Unknown
-British Virgin Islands,2020,1840,10930431,Other,Other/Unknown,Other/Unknown
-British Virgin Islands,2021,1995,33292428,Other,Other/Unknown,Other/Unknown
-British Virgin Islands,2022,1850,48459372,Other,Other/Unknown,Other/Unknown
-British Virgin Islands,2023,2123,48451711,Other,Other/Unknown,Other/Unknown
-British Virgin Islands,2024,2194,44568346,Other,Other/Unknown,Other/Unknown
-Bulgaria,2019,14189,118129647,Other,Upper-Middle Income,Other/Unknown
-Bulgaria,2020,26712,111207806,Other,Upper-Middle Income,Other/Unknown
-Bulgaria,2021,24968,248788813,Other,Upper-Middle Income,Other/Unknown
-Bulgaria,2022,23525,338814414,Other,Upper-Middle Income,Other/Unknown
-Bulgaria,2023,26404,443783119,Other,Upper-Middle Income,Other/Unknown
-Bulgaria,2024,24208,522143452,Other,Upper-Middle Income,Other/Unknown
-Cambodia,2019,8019,75168331,Other,Other/Unknown,Other/Unknown
-Cambodia,2020,10613,80437904,Other,Other/Unknown,Other/Unknown
-Cambodia,2021,11881,131850198,Other,Other/Unknown,Other/Unknown
-Cambodia,2022,14054,200408531,Other,Other/Unknown,Other/Unknown
-Cambodia,2023,10343,241848538,Other,Other/Unknown,Other/Unknown
-Cambodia,2024,13086,294425335,Other,Other/Unknown,Other/Unknown
-Canada,2019,36655,673206760,North America,High Income,Western
-Canada,2020,72594,793553716,North America,High Income,Western
-Canada,2021,73526,1161857486,North America,High Income,Western
-Canada,2022,71962,1857378939,North America,High Income,Western
-Canada,2023,54220,2277570974,North America,High Income,Western
-Canada,2024,71796,2542329668,North America,High Income,Western
-Chile,2019,1409,49590061,Other,Other/Unknown,Other/Unknown
-Chile,2020,2772,40920566,Other,Other/Unknown,Other/Unknown
-Chile,2021,2624,60731300,Other,Other/Unknown,Other/Unknown
-Chile,2022,2451,113895219,Other,Other/Unknown,Other/Unknown
-Chile,2023,3034,129479043,Other,Other/Unknown,Other/Unknown
-Chile,2024,3501,195674840,Other,Other/Unknown,Other/Unknown
-China,2019,449305,2532007781,Other,Upper-Middle Income,Eastern
-China,2020,705690,3061083799,Other,Upper-Middle Income,Eastern
-China,2021,940125,5067323422,Other,Upper-Middle Income,Eastern
-China,2022,764388,7405960835,Other,Upper-Middle Income,Eastern
-China,2023,678224,8997589579,Other,Upper-Middle Income,Eastern
-China,2024,868309,11299124337,Other,Upper-Middle Income,Eastern
-Colombia,2019,6865,69494853,Other,Other/Unknown,Other/Unknown
-Colombia,2020,13886,64216061,Other,Other/Unknown,Other/Unknown
-Colombia,2021,15699,109189140,Other,Other/Unknown,Other/Unknown
-Colombia,2022,15657,164002220,Other,Other/Unknown,Other/Unknown
-Colombia,2023,17214,203249469,Other,Other/Unknown,Other/Unknown
-Colombia,2024,14814,285005300,Other,Other/Unknown,Other/Unknown
-Costa Rica,2019,414,4698147,Other,Other/Unknown,Other/Unknown
-Costa Rica,2020,659,7090087,Other,Other/Unknown,Other/Unknown
-Costa Rica,2021,815,11177920,Other,Other/Unknown,Other/Unknown
-Costa Rica,2022,770,16613844,Other,Other/Unknown,Other/Unknown
-Costa Rica,2023,1013,20887823,Other,Other/Unknown,Other/Unknown
-Costa Rica,2024,831,24076527,Other,Other/Unknown,Other/Unknown
-Croatia,2019,1468,8092129,Other,Other/Unknown,Other/Unknown
-Croatia,2020,1658,10595145,Other,Other/Unknown,Other/Unknown
-Croatia,2021,2326,18793743,Other,Other/Unknown,Other/Unknown
-Croatia,2022,1879,24393753,Other,Other/Unknown,Other/Unknown
-Croatia,2023,2280,28853906,Other,Other/Unknown,Other/Unknown
-Croatia,2024,3054,34319762,Other,Other/Unknown,Other/Unknown
-Cyprus,2019,999,5686522,Other,Other/Unknown,Other/Unknown
-Cyprus,2020,1706,6853488,Other,Other/Unknown,Other/Unknown
-Cyprus,2021,1762,12133741,Other,Other/Unknown,Other/Unknown
-Cyprus,2022,1723,17339298,Other,Other/Unknown,Other/Unknown
-Cyprus,2023,2345,19199921,Other,Other/Unknown,Other/Unknown
-Cyprus,2024,1838,19483205,Other,Other/Unknown,Other/Unknown
-Czech Republic,2019,30211,172991200,Other,Other/Unknown,Other/Unknown
-Czech Republic,2020,47442,212529097,Other,Other/Unknown,Other/Unknown
-Czech Republic,2021,68328,431356435,Other,Other/Unknown,Other/Unknown
-Czech Republic,2022,49178,514944367,Other,Other/Unknown,Other/Unknown
-Czech Republic,2023,60855,600351173,Other,Other/Unknown,Other/Unknown
-Czech Republic,2024,60358,718180351,Other,Other/Unknown,Other/Unknown
-Denmark,2019,5670,38097127,Other,Other/Unknown,Other/Unknown
-Denmark,2020,9143,37191643,Other,Other/Unknown,Other/Unknown
-Denmark,2021,10529,78734767,Other,Other/Unknown,Other/Unknown
-Denmark,2022,9954,119930937,Other,Other/Unknown,Other/Unknown
-Denmark,2023,10211,117811560,Other,Other/Unknown,Other/Unknown
-Denmark,2024,8616,125845887,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2019,7728,39752918,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2020,14328,43312940,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2021,13998,104934081,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2022,16645,102536313,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2023,14968,168606659,Other,Other/Unknown,Other/Unknown
-Dominican Republic,2024,15309,165843869,Other,Other/Unknown,Other/Unknown
-Ecuador,2019,6226,38064072,Other,Other/Unknown,Other/Unknown
-Ecuador,2020,8187,47318231,Other,Other/Unknown,Other/Unknown
-Ecuador,2021,10130,75385877,Other,Other/Unknown,Other/Unknown
-Ecuador,2022,8819,127649437,Other,Other/Unknown,Other/Unknown
-Ecuador,2023,9335,142120063,Other,Other/Unknown,Other/Unknown
-Ecuador,2024,12406,197235551,Other,Other/Unknown,Other/Unknown
-Egypt,2019,1426,21281601,Other,Lower-Middle Income,Other/Unknown
-Egypt,2020,1971,29498445,Other,Lower-Middle Income,Other/Unknown
-Egypt,2021,2722,36567441,Other,Lower-Middle Income,Other/Unknown
-Egypt,2022,2216,54836127,Other,Lower-Middle Income,Other/Unknown
-Egypt,2023,2482,68775642,Other,Lower-Middle Income,Other/Unknown
-Egypt,2024,2688,99156499,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2019,429,7625619,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2020,711,6605847,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2021,749,14236747,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2022,825,19942832,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2023,791,29082153,Other,Lower-Middle Income,Other/Unknown
-El Salvador,2024,872,29969414,Other,Lower-Middle Income,Other/Unknown
-Estonia,2019,9712,63377416,Other,Other/Unknown,Other/Unknown
-Estonia,2020,16004,81946736,Other,Other/Unknown,Other/Unknown
-Estonia,2021,12971,102711672,Other,Other/Unknown,Other/Unknown
-Estonia,2022,14979,169799799,Other,Other/Unknown,Other/Unknown
-Estonia,2023,18399,210872015,Other,Other/Unknown,Other/Unknown
-Estonia,2024,20046,244151604,Other,Other/Unknown,Other/Unknown
-Eswatini,2019,6293,36939924,Other,Other/Unknown,Other/Unknown
-Eswatini,2020,9344,55886392,Other,Other/Unknown,Other/Unknown
-Eswatini,2021,9415,73533565,Other,Other/Unknown,Other/Unknown
-Eswatini,2022,8944,107487425,Other,Other/Unknown,Other/Unknown
-Eswatini,2023,10325,110748724,Other,Other/Unknown,Other/Unknown
-Eswatini,2024,11752,162203379,Other,Other/Unknown,Other/Unknown
-Finland,2019,14427,179710211,Other,High Income,Other/Unknown
-Finland,2020,23146,209024271,Other,High Income,Other/Unknown
-Finland,2021,17554,442442726,Other,High Income,Other/Unknown
-Finland,2022,29642,513111722,Other,High Income,Other/Unknown
-Finland,2023,26918,712562892,Other,High Income,Other/Unknown
-Finland,2024,25890,721920497,Other,High Income,Other/Unknown
-France,2019,160810,967758695,Other,High Income,Western
-France,2020,211096,1099523432,Other,High Income,Western
-France,2021,204190,2305495866,Other,High Income,Western
-France,2022,183886,3043377444,Other,High Income,Western
-France,2023,297363,3212220994,Other,High Income,Western
-France,2024,208832,4025659986,Other,High Income,Western
-Georgia,2019,2158,11248342,Other,Other/Unknown,Other/Unknown
-Georgia,2020,2749,13581482,Other,Other/Unknown,Other/Unknown
-Georgia,2021,2949,22863562,Other,Other/Unknown,Other/Unknown
-Georgia,2022,2760,33926202,Other,Other/Unknown,Other/Unknown
-Georgia,2023,3265,34237776,Other,Other/Unknown,Other/Unknown
-Georgia,2024,3306,47876570,Other,Other/Unknown,Other/Unknown
-Germany,2019,95136,1559415577,Other,High Income,Western
-Germany,2020,148495,2432407746,Other,High Income,Western
-Germany,2021,164061,2226372097,Other,High Income,Western
-Germany,2022,203346,3442137764,Other,High Income,Western
-Germany,2023,178259,5575128098,Other,High Income,Western
-Germany,2024,146731,5279486289,Other,High Income,Western
-Ghana,2019,463,6103570,Other,Other/Unknown,Other/Unknown
-Ghana,2020,842,6502100,Other,Other/Unknown,Other/Unknown
-Ghana,2021,866,11183262,Other,Other/Unknown,Other/Unknown
-Ghana,2022,812,20023734,Other,Other/Unknown,Other/Unknown
-Ghana,2023,765,22014808,Other,Other/Unknown,Other/Unknown
-Ghana,2024,1229,23766287,Other,Other/Unknown,Other/Unknown
-Greece,2019,5785,41506851,Other,Other/Unknown,Other/Unknown
-Greece,2020,10490,45286391,Other,Other/Unknown,Other/Unknown
-Greece,2021,10211,100042024,Other,Other/Unknown,Other/Unknown
-Greece,2022,9740,115032546,Other,Other/Unknown,Other/Unknown
-Greece,2023,10849,134866182,Other,Other/Unknown,Other/Unknown
-Greece,2024,8408,157051155,Other,Other/Unknown,Other/Unknown
-Guatemala,2019,3799,23310755,Other,Other/Unknown,Other/Unknown
-Guatemala,2020,6358,26291913,Other,Other/Unknown,Other/Unknown
-Guatemala,2021,4657,51948711,Other,Other/Unknown,Other/Unknown
-Guatemala,2022,6416,53100301,Other,Other/Unknown,Other/Unknown
-Guatemala,2023,6169,84710783,Other,Other/Unknown,Other/Unknown
-Guatemala,2024,6949,70899579,Other,Other/Unknown,Other/Unknown
-Guinea,2019,316,2942671,Other,Other/Unknown,Other/Unknown
-Guinea,2020,546,4484265,Other,Other/Unknown,Other/Unknown
-Guinea,2021,528,5487083,Other,Other/Unknown,Other/Unknown
-Guinea,2022,597,6648059,Other,Other/Unknown,Other/Unknown
-Guinea,2023,655,8907146,Other,Other/Unknown,Other/Unknown
-Guinea,2024,660,11773707,Other,Other/Unknown,Other/Unknown
-Honduras,2019,7668,77996271,Other,Other/Unknown,Other/Unknown
-Honduras,2020,12844,89984923,Other,Other/Unknown,Other/Unknown
-Honduras,2021,13421,152669227,Other,Other/Unknown,Other/Unknown
-Honduras,2022,12760,224899521,Other,Other/Unknown,Other/Unknown
-Honduras,2023,13581,264720338,Other,Other/Unknown,Other/Unknown
-Honduras,2024,10132,282288918,Other,Other/Unknown,Other/Unknown
-Hong Kong,2019,113923,746613837,Other,Other/Unknown,Other/Unknown
-Hong Kong,2020,237997,823420937,Other,Other/Unknown,Other/Unknown
-Hong Kong,2021,225295,1732897646,Other,Other/Unknown,Other/Unknown
-Hong Kong,2022,254729,2360701043,Other,Other/Unknown,Other/Unknown
-Hong Kong,2023,242261,3458797505,Other,Other/Unknown,Other/Unknown
-Hong Kong,2024,248576,2863308167,Other,Other/Unknown,Other/Unknown
-Hungary,2019,3707,75257661,Other,Other/Unknown,Other/Unknown
-Hungary,2020,6227,61005748,Other,Other/Unknown,Other/Unknown
-Hungary,2021,6390,140588839,Other,Other/Unknown,Other/Unknown
-Hungary,2022,4726,198716263,Other,Other/Unknown,Other/Unknown
-Hungary,2023,4484,309048399,Other,Other/Unknown,Other/Unknown
-Hungary,2024,7157,274342202,Other,Other/Unknown,Other/Unknown
-Iceland,2019,392,3053735,Other,Other/Unknown,Other/Unknown
-Iceland,2020,606,3294003,Other,Other/Unknown,Other/Unknown
-Iceland,2021,655,5624854,Other,Other/Unknown,Other/Unknown
-Iceland,2022,622,7103744,Other,Other/Unknown,Other/Unknown
-Iceland,2023,751,11241606,Other,Other/Unknown,Other/Unknown
-Iceland,2024,609,14745257,Other,Other/Unknown,Other/Unknown
-India,2019,50473,989343380,Other,Lower-Middle Income,Eastern
-India,2020,104570,1155524769,Other,Lower-Middle Income,Eastern
-India,2021,89534,2062881042,Other,Lower-Middle Income,Eastern
-India,2022,82980,2898740652,Other,Lower-Middle Income,Eastern
-India,2023,96339,3640042741,Other,Lower-Middle Income,Eastern
-India,2024,98092,4164403367,Other,Lower-Middle Income,Eastern
-Indonesia,2019,32221,437808210,Other,Lower-Middle Income,Other/Unknown
-Indonesia,2020,67619,598180089,Other,Lower-Middle Income,Other/Unknown
-Indonesia,2021,57876,972015041,Other,Lower-Middle Income,Other/Unknown
-Indonesia,2022,56299,1465738977,Other,Lower-Middle Income,Other/Unknown
-Indonesia,2023,59403,2089001077,Other,Lower-Middle Income,Other/Unknown
-Indonesia,2024,53925,2432253507,Other,Lower-Middle Income,Other/Unknown
-Iran,2019,46337,442237902,Other,Other/Unknown,Other/Unknown
-Iran,2020,61727,508268749,Other,Other/Unknown,Other/Unknown
-Iran,2021,74786,843019965,Other,Other/Unknown,Other/Unknown
-Iran,2022,41924,1314548035,Other,Other/Unknown,Other/Unknown
-Iran,2023,69872,1502603054,Other,Other/Unknown,Other/Unknown
-Iran,2024,74119,1614663021,Other,Other/Unknown,Other/Unknown
-Iraq,2019,32400,191135345,Other,Other/Unknown,Other/Unknown
-Iraq,2020,56447,192067847,Other,Other/Unknown,Other/Unknown
-Iraq,2021,59837,313674949,Other,Other/Unknown,Other/Unknown
-Iraq,2022,41170,605452580,Other,Other/Unknown,Other/Unknown
-Iraq,2023,63177,524182382,Other,Other/Unknown,Other/Unknown
-Iraq,2024,70055,803018708,Other,Other/Unknown,Other/Unknown
-Ireland,2019,16178,316218523,Other,High Income,Other/Unknown
-Ireland,2020,22105,382100626,Other,High Income,Other/Unknown
-Ireland,2021,25510,544309794,Other,High Income,Other/Unknown
-Ireland,2022,25234,770682201,Other,High Income,Other/Unknown
-Ireland,2023,28289,856830691,Other,High Income,Other/Unknown
-Ireland,2024,31525,1499685797,Other,High Income,Other/Unknown
-Israel,2019,7870,72760275,Other,High Income,Other/Unknown
-Israel,2020,9794,89001013,Other,High Income,Other/Unknown
-Israel,2021,13563,110534215,Other,High Income,Other/Unknown
-Israel,2022,13754,225640682,Other,High Income,Other/Unknown
-Israel,2023,14982,281333883,Other,High Income,Other/Unknown
-Israel,2024,16114,310489542,Other,High Income,Other/Unknown
-Italy,2019,42362,291496322,Other,Other/Unknown,Western
-Italy,2020,77806,360913944,Other,Other/Unknown,Western
-Italy,2021,99708,667686968,Other,Other/Unknown,Western
-Italy,2022,74277,967404316,Other,Other/Unknown,Western
-Italy,2023,84197,1192949271,Other,Other/Unknown,Western
-Italy,2024,91776,1328578738,Other,Other/Unknown,Western
-Japan,2019,86934,799709881,Other,High Income,Eastern
-Japan,2020,159519,885281428,Other,High Income,Eastern
-Japan,2021,161803,1088839354,Other,High Income,Eastern
-Japan,2022,157306,2253466948,Other,High Income,Eastern
-Japan,2023,170208,1995347480,Other,High Income,Eastern
-Japan,2024,182470,3393546251,Other,High Income,Eastern
-Jordan,2019,431,3218885,Other,Other/Unknown,Other/Unknown
-Jordan,2020,796,3206926,Other,Other/Unknown,Other/Unknown
-Jordan,2021,882,5933560,Other,Other/Unknown,Other/Unknown
-Jordan,2022,868,8015475,Other,Other/Unknown,Other/Unknown
-Jordan,2023,833,11136442,Other,Other/Unknown,Other/Unknown
-Jordan,2024,955,11618599,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2019,9655,215224978,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2020,16735,228613185,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2021,17175,334183044,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2022,13293,490818787,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2023,12134,642098116,Other,Other/Unknown,Other/Unknown
-Kazakhstan,2024,18341,883976919,Other,Other/Unknown,Other/Unknown
-Kenya,2019,2410,19120184,Other,Other/Unknown,Other/Unknown
-Kenya,2020,3367,24505055,Other,Other/Unknown,Other/Unknown
-Kenya,2021,3777,41314068,Other,Other/Unknown,Other/Unknown
-Kenya,2022,3176,67202983,Other,Other/Unknown,Other/Unknown
-Kenya,2023,3993,68532563,Other,Other/Unknown,Other/Unknown
-Kenya,2024,4245,85415845,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2019,5029,90758012,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2020,8607,127676103,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2021,8796,223117975,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2022,6508,282601093,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2023,11930,316897412,Other,Other/Unknown,Other/Unknown
-Kyrgyzstan,2024,10285,384798989,Other,Other/Unknown,Other/Unknown
-Latvia,2019,4183,27217794,Other,Other/Unknown,Other/Unknown
-Latvia,2020,9046,33853664,Other,Other/Unknown,Other/Unknown
-Latvia,2021,7659,50261795,Other,Other/Unknown,Other/Unknown
-Latvia,2022,5668,79401403,Other,Other/Unknown,Other/Unknown
-Latvia,2023,7348,95600192,Other,Other/Unknown,Other/Unknown
-Latvia,2024,8140,141459082,Other,Other/Unknown,Other/Unknown
-Lebanon,2019,4337,39296596,Other,Other/Unknown,Other/Unknown
-Lebanon,2020,6880,41501339,Other,Other/Unknown,Other/Unknown
-Lebanon,2021,5665,72133701,Other,Other/Unknown,Other/Unknown
-Lebanon,2022,8680,116848478,Other,Other/Unknown,Other/Unknown
-Lebanon,2023,7894,120470644,Other,Other/Unknown,Other/Unknown
-Lebanon,2024,6248,148621809,Other,Other/Unknown,Other/Unknown
-Libya,2019,1154,7827594,Other,Other/Unknown,Other/Unknown
-Libya,2020,1870,9907911,Other,Other/Unknown,Other/Unknown
-Libya,2021,1825,18937753,Other,Other/Unknown,Other/Unknown
-Libya,2022,1908,25303239,Other,Other/Unknown,Other/Unknown
-Libya,2023,2329,26933272,Other,Other/Unknown,Other/Unknown
-Libya,2024,2359,35814196,Other,Other/Unknown,Other/Unknown
-Lithuania,2019,5463,58251632,Other,Other/Unknown,Other/Unknown
-Lithuania,2020,8981,86867615,Other,Other/Unknown,Other/Unknown
-Lithuania,2021,11359,120550579,Other,Other/Unknown,Other/Unknown
-Lithuania,2022,9666,188147563,Other,Other/Unknown,Other/Unknown
-Lithuania,2023,8433,315202293,Other,Other/Unknown,Other/Unknown
-Lithuania,2024,10050,257790222,Other,Other/Unknown,Other/Unknown
-Luxembourg,2019,612,11718536,Other,Other/Unknown,Other/Unknown
-Luxembourg,2020,1035,14032708,Other,Other/Unknown,Other/Unknown
-Luxembourg,2021,1055,22175186,Other,Other/Unknown,Other/Unknown
-Luxembourg,2022,812,32981892,Other,Other/Unknown,Other/Unknown
-Luxembourg,2023,951,41315061,Other,Other/Unknown,Other/Unknown
-Luxembourg,2024,1099,45198080,Other,Other/Unknown,Other/Unknown
-Malaysia,2019,3163,53285151,Other,Upper-Middle Income,Other/Unknown
-Malaysia,2020,5608,55360884,Other,Upper-Middle Income,Other/Unknown
-Malaysia,2021,5851,131437045,Other,Upper-Middle Income,Other/Unknown
-Malaysia,2022,6937,187356525,Other,Upper-Middle Income,Other/Unknown
-Malaysia,2023,6006,226431418,Other,Upper-Middle Income,Other/Unknown
-Malaysia,2024,5931,344158750,Other,Upper-Middle Income,Other/Unknown
-Maldives,2019,337,2832717,Other,Other/Unknown,Other/Unknown
-Maldives,2020,668,5022918,Other,Other/Unknown,Other/Unknown
-Maldives,2021,574,4362630,Other,Other/Unknown,Other/Unknown
-Maldives,2022,577,9698308,Other,Other/Unknown,Other/Unknown
-Maldives,2023,778,11432984,Other,Other/Unknown,Other/Unknown
-Maldives,2024,1057,13304758,Other,Other/Unknown,Other/Unknown
-Malta,2019,642,15863991,Other,Other/Unknown,Other/Unknown
-Malta,2020,1589,19538664,Other,Other/Unknown,Other/Unknown
-Malta,2021,1402,32583587,Other,Other/Unknown,Other/Unknown
-Malta,2022,1547,39902875,Other,Other/Unknown,Other/Unknown
-Malta,2023,1821,56426606,Other,Other/Unknown,Other/Unknown
-Malta,2024,1347,66224639,Other,Other/Unknown,Other/Unknown
-Mexico,2019,6770,118445689,Other,Upper-Middle Income,Other/Unknown
-Mexico,2020,10216,144440919,Other,Upper-Middle Income,Other/Unknown
-Mexico,2021,9626,238351830,Other,Upper-Middle Income,Other/Unknown
-Mexico,2022,12425,365325453,Other,Upper-Middle Income,Other/Unknown
-Mexico,2023,12870,446395507,Other,Upper-Middle Income,Other/Unknown
-Mexico,2024,17969,506585917,Other,Upper-Middle Income,Other/Unknown
-Moldova,2019,5156,29234480,Other,Other/Unknown,Other/Unknown
-Moldova,2020,6684,31714733,Other,Other/Unknown,Other/Unknown
-Moldova,2021,9518,54354359,Other,Other/Unknown,Other/Unknown
-Moldova,2022,5551,100461762,Other,Other/Unknown,Other/Unknown
-Moldova,2023,7045,89668934,Other,Other/Unknown,Other/Unknown
-Moldova,2024,9086,118929790,Other,Other/Unknown,Other/Unknown
-Mongolia,2019,1064,26326159,Other,Other/Unknown,Other/Unknown
-Mongolia,2020,1937,32473442,Other,Other/Unknown,Other/Unknown
-Mongolia,2021,1514,52528265,Other,Other/Unknown,Other/Unknown
-Mongolia,2022,2321,98551738,Other,Other/Unknown,Other/Unknown
-Mongolia,2023,1999,93152308,Other,Other/Unknown,Other/Unknown
-Mongolia,2024,2253,123314277,Other,Other/Unknown,Other/Unknown
-Mozambique,2019,1773,14590391,Other,Other/Unknown,Other/Unknown
-Mozambique,2020,3510,16760987,Other,Other/Unknown,Other/Unknown
-Mozambique,2021,3203,29921649,Other,Other/Unknown,Other/Unknown
-Mozambique,2022,3254,33495225,Other,Other/Unknown,Other/Unknown
-Mozambique,2023,3320,47474414,Other,Other/Unknown,Other/Unknown
-Mozambique,2024,4358,60688754,Other,Other/Unknown,Other/Unknown
-Myanmar,2019,2100,12568012,Other,Other/Unknown,Other/Unknown
-Myanmar,2020,3264,15686730,Other,Other/Unknown,Other/Unknown
-Myanmar,2021,3638,28074566,Other,Other/Unknown,Other/Unknown
-Myanmar,2022,2329,36636924,Other,Other/Unknown,Other/Unknown
-Myanmar,2023,3655,44240763,Other,Other/Unknown,Other/Unknown
-Myanmar,2024,3960,55325202,Other,Other/Unknown,Other/Unknown
-Namibia,2019,239,2779417,Other,Other/Unknown,Other/Unknown
-Namibia,2020,430,5249534,Other,Other/Unknown,Other/Unknown
-Namibia,2021,647,7782176,Other,Other/Unknown,Other/Unknown
-Namibia,2022,602,11532811,Other,Other/Unknown,Other/Unknown
-Namibia,2023,629,12975631,Other,Other/Unknown,Other/Unknown
-Namibia,2024,718,16184254,Other,Other/Unknown,Other/Unknown
-Nepal,2019,1046,9903690,Other,Other/Unknown,Other/Unknown
-Nepal,2020,2207,11937086,Other,Other/Unknown,Other/Unknown
-Nepal,2021,2485,19275846,Other,Other/Unknown,Other/Unknown
-Nepal,2022,2130,28683974,Other,Other/Unknown,Other/Unknown
-Nepal,2023,2992,36890222,Other,Other/Unknown,Other/Unknown
-Nepal,2024,2805,43141285,Other,Other/Unknown,Other/Unknown
-Netherlands,2019,49692,572304502,Other,High Income,Other/Unknown
-Netherlands,2020,85089,895396401,Other,High Income,Other/Unknown
-Netherlands,2021,95372,1437353585,Other,High Income,Other/Unknown
-Netherlands,2022,80348,2216753376,Other,High Income,Other/Unknown
-Netherlands,2023,83301,3079554598,Other,High Income,Other/Unknown
-Netherlands,2024,97619,3320490586,Other,High Income,Other/Unknown
-New Zealand,2019,1662,13317391,Other,High Income,Western
-New Zealand,2020,3713,18466612,Other,High Income,Western
-New Zealand,2021,4210,44661082,Other,High Income,Western
-New Zealand,2022,3972,58125970,Other,High Income,Western
-New Zealand,2023,4599,70383275,Other,High Income,Western
-New Zealand,2024,4488,67076977,Other,High Income,Western
-Nicaragua,2019,859,5969337,Other,Other/Unknown,Other/Unknown
-Nicaragua,2020,1400,5175487,Other,Other/Unknown,Other/Unknown
-Nicaragua,2021,1584,9004728,Other,Other/Unknown,Other/Unknown
-Nicaragua,2022,1571,17315195,Other,Other/Unknown,Other/Unknown
-Nicaragua,2023,1642,22964248,Other,Other/Unknown,Other/Unknown
-Nicaragua,2024,1453,25763072,Other,Other/Unknown,Other/Unknown
-Nigeria,2019,1781,34340619,Other,Lower-Middle Income,Other/Unknown
-Nigeria,2020,3074,35736203,Other,Lower-Middle Income,Other/Unknown
-Nigeria,2021,2203,56107226,Other,Lower-Middle Income,Other/Unknown
-Nigeria,2022,3687,79935245,Other,Lower-Middle Income,Other/Unknown
-Nigeria,2023,3556,102912199,Other,Lower-Middle Income,Other/Unknown
-Nigeria,2024,3601,118105851,Other,Lower-Middle Income,Other/Unknown
-Norway,2019,4031,45713939,Other,High Income,Other/Unknown
-Norway,2020,6733,54542901,Other,High Income,Other/Unknown
-Norway,2021,10130,64274074,Other,High Income,Other/Unknown
-Norway,2022,9695,108540856,Other,High Income,Other/Unknown
-Norway,2023,10366,195621525,Other,High Income,Other/Unknown
-Norway,2024,11172,187551761,Other,High Income,Other/Unknown
-Oman,2019,2814,14755487,Other,Other/Unknown,Other/Unknown
-Oman,2020,3882,14987636,Other,Other/Unknown,Other/Unknown
-Oman,2021,3538,21448883,Other,Other/Unknown,Other/Unknown
-Oman,2022,4068,28911996,Other,Other/Unknown,Other/Unknown
-Oman,2023,4468,49837425,Other,Other/Unknown,Other/Unknown
-Oman,2024,4692,66634987,Other,Other/Unknown,Other/Unknown
-Pakistan,2019,28492,181705646,Other,Lower-Middle Income,Other/Unknown
-Pakistan,2020,52024,200518146,Other,Lower-Middle Income,Other/Unknown
-Pakistan,2021,40944,341893089,Other,Lower-Middle Income,Other/Unknown
-Pakistan,2022,48572,681501827,Other,Lower-Middle Income,Other/Unknown
-Pakistan,2023,53390,586037584,Other,Lower-Middle Income,Other/Unknown
-Pakistan,2024,71700,786591645,Other,Lower-Middle Income,Other/Unknown
-Palestine,2019,1784,22483591,Other,Other/Unknown,Other/Unknown
-Palestine,2020,2890,25423219,Other,Other/Unknown,Other/Unknown
-Palestine,2021,3352,48918464,Other,Other/Unknown,Other/Unknown
-Palestine,2022,3210,57796003,Other,Other/Unknown,Other/Unknown
-Palestine,2023,3378,69292891,Other,Other/Unknown,Other/Unknown
-Palestine,2024,3811,66002407,Other,Other/Unknown,Other/Unknown
-Panama,2019,963,6611775,Other,Other/Unknown,Other/Unknown
-Panama,2020,1634,7821630,Other,Other/Unknown,Other/Unknown
-Panama,2021,1280,14020511,Other,Other/Unknown,Other/Unknown
-Panama,2022,1594,20058995,Other,Other/Unknown,Other/Unknown
-Panama,2023,1272,24329856,Other,Other/Unknown,Other/Unknown
-Panama,2024,1902,28577503,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2019,651,6153461,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2020,1016,6431254,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2021,1065,12315882,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2022,1073,18509434,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2023,1062,23087850,Other,Other/Unknown,Other/Unknown
-Papua New Guinea,2024,1353,27177455,Other,Other/Unknown,Other/Unknown
-Paraguay,2019,1913,10967865,Other,Other/Unknown,Other/Unknown
-Paraguay,2020,2992,13815152,Other,Other/Unknown,Other/Unknown
-Paraguay,2021,3188,26677869,Other,Other/Unknown,Other/Unknown
-Paraguay,2022,3768,40114594,Other,Other/Unknown,Other/Unknown
-Paraguay,2023,3487,33579643,Other,Other/Unknown,Other/Unknown
-Paraguay,2024,2678,45168957,Other,Other/Unknown,Other/Unknown
-Peru,2019,4435,27363061,Other,Other/Unknown,Other/Unknown
-Peru,2020,7339,27058091,Other,Other/Unknown,Other/Unknown
-Peru,2021,8250,53418304,Other,Other/Unknown,Other/Unknown
-Peru,2022,7956,76468535,Other,Other/Unknown,Other/Unknown
-Peru,2023,9527,101727109,Other,Other/Unknown,Other/Unknown
-Peru,2024,9251,91797172,Other,Other/Unknown,Other/Unknown
-Philippines,2019,5688,179433874,Other,Lower-Middle Income,Other/Unknown
-Philippines,2020,10642,166452785,Other,Lower-Middle Income,Other/Unknown
-Philippines,2021,8192,276511773,Other,Lower-Middle Income,Other/Unknown
-Philippines,2022,11186,382348042,Other,Lower-Middle Income,Other/Unknown
-Philippines,2023,11365,534640287,Other,Lower-Middle Income,Other/Unknown
-Philippines,2024,12797,576134379,Other,Lower-Middle Income,Other/Unknown
-Poland,2019,21903,390365695,Other,Other/Unknown,Other/Unknown
-Poland,2020,42442,362788093,Other,Other/Unknown,Other/Unknown
-Poland,2021,37317,596864046,Other,Other/Unknown,Other/Unknown
-Poland,2022,48071,1207252948,Other,Other/Unknown,Other/Unknown
-Poland,2023,49459,1040011485,Other,Other/Unknown,Other/Unknown
-Poland,2024,40855,1359253205,Other,Other/Unknown,Other/Unknown
-Portugal,2019,1119,13870074,Other,Other/Unknown,Other/Unknown
-Portugal,2020,2020,12391290,Other,Other/Unknown,Other/Unknown
-Portugal,2021,2102,18205913,Other,Other/Unknown,Other/Unknown
-Portugal,2022,1918,30859319,Other,Other/Unknown,Other/Unknown
-Portugal,2023,2178,28700418,Other,Other/Unknown,Other/Unknown
-Portugal,2024,2209,40192274,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2019,655,5929974,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2020,1338,7209755,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2021,1785,9463928,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2022,1594,17211758,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2023,1817,21018302,Other,Other/Unknown,Other/Unknown
-Puerto Rico,2024,1974,31545772,Other,Other/Unknown,Other/Unknown
-Romania,2019,17366,121565659,Other,Upper-Middle Income,Other/Unknown
-Romania,2020,25108,152115092,Other,Upper-Middle Income,Other/Unknown
-Romania,2021,31549,301879874,Other,Upper-Middle Income,Other/Unknown
-Romania,2022,28823,349041126,Other,Upper-Middle Income,Other/Unknown
-Romania,2023,31255,552881444,Other,Upper-Middle Income,Other/Unknown
-Romania,2024,33338,534185027,Other,Upper-Middle Income,Other/Unknown
-Russia,2019,159459,2404940557,Other,Upper-Middle Income,Eastern
-Russia,2020,293917,2402832265,Other,Upper-Middle Income,Eastern
-Russia,2021,264533,5932226222,Other,Upper-Middle Income,Eastern
-Russia,2022,296978,7664442141,Other,Upper-Middle Income,Eastern
-Russia,2023,289271,11282113958,Other,Upper-Middle Income,Eastern
-Russia,2024,324091,11161782401,Other,Upper-Middle Income,Eastern
-Saint Kitts and Nevis,2019,261,3016590,Other,Other/Unknown,Other/Unknown
-Saint Kitts and Nevis,2020,429,5272765,Other,Other/Unknown,Other/Unknown
-Saint Kitts and Nevis,2021,576,7953931,Other,Other/Unknown,Other/Unknown
-Saint Kitts and Nevis,2022,458,10228299,Other,Other/Unknown,Other/Unknown
-Saint Kitts and Nevis,2023,540,9735063,Other,Other/Unknown,Other/Unknown
-Saint Kitts and Nevis,2024,523,15660694,Other,Other/Unknown,Other/Unknown
-Saudi Arabia,2019,543,11786077,Other,High Income,Other/Unknown
-Saudi Arabia,2020,776,14140050,Other,High Income,Other/Unknown
-Saudi Arabia,2021,1115,23930228,Other,High Income,Other/Unknown
-Saudi Arabia,2022,1077,25027493,Other,High Income,Other/Unknown
-Saudi Arabia,2023,1099,43606854,Other,High Income,Other/Unknown
-Saudi Arabia,2024,882,53680633,Other,High Income,Other/Unknown
-Serbia,2019,9268,70529910,Other,Upper-Middle Income,Other/Unknown
-Serbia,2020,17344,81490357,Other,Upper-Middle Income,Other/Unknown
-Serbia,2021,19484,129659345,Other,Upper-Middle Income,Other/Unknown
-Serbia,2022,15267,200497281,Other,Upper-Middle Income,Other/Unknown
-Serbia,2023,17658,199276163,Other,Upper-Middle Income,Other/Unknown
-Serbia,2024,18312,276403955,Other,Upper-Middle Income,Other/Unknown
-Seychelles,2019,27698,326719153,Other,Other/Unknown,Other/Unknown
-Seychelles,2020,47919,410036875,Other,Other/Unknown,Other/Unknown
-Seychelles,2021,57050,643725512,Other,Other/Unknown,Other/Unknown
-Seychelles,2022,48057,1004081887,Other,Other/Unknown,Other/Unknown
-Seychelles,2023,49245,1159638524,Other,Other/Unknown,Other/Unknown
-Seychelles,2024,72589,1185940522,Other,Other/Unknown,Other/Unknown
-Singapore,2019,61470,1051420849,Other,High Income,Other/Unknown
-Singapore,2020,127548,1102776096,Other,High Income,Other/Unknown
-Singapore,2021,139124,1834545540,Other,High Income,Other/Unknown
-Singapore,2022,137210,3813537684,Other,High Income,Other/Unknown
-Singapore,2023,144002,3828469818,Other,High Income,Other/Unknown
-Singapore,2024,161666,4524535787,Other,High Income,Other/Unknown
-Slovakia,2019,1962,18206898,Other,Other/Unknown,Other/Unknown
-Slovakia,2020,3761,22972759,Other,Other/Unknown,Other/Unknown
-Slovakia,2021,4336,23441713,Other,Other/Unknown,Other/Unknown
-Slovakia,2022,3100,45874291,Other,Other/Unknown,Other/Unknown
-Slovakia,2023,3544,69951666,Other,Other/Unknown,Other/Unknown
-Slovakia,2024,3770,80074928,Other,Other/Unknown,Other/Unknown
-Slovenia,2019,358,7257183,Other,Other/Unknown,Other/Unknown
-Slovenia,2020,472,9239424,Other,Other/Unknown,Other/Unknown
-Slovenia,2021,654,14206301,Other,Other/Unknown,Other/Unknown
-Slovenia,2022,657,22294080,Other,Other/Unknown,Other/Unknown
-Slovenia,2023,658,22218114,Other,Other/Unknown,Other/Unknown
-Slovenia,2024,553,42624356,Other,Other/Unknown,Other/Unknown
-South Africa,2019,43982,622385234,Africa,Upper-Middle Income,Other/Unknown
-South Africa,2020,89172,867946291,Africa,Upper-Middle Income,Other/Unknown
-South Africa,2021,79227,1324036298,Africa,Upper-Middle Income,Other/Unknown
-South Africa,2022,76854,2082730216,Africa,Upper-Middle Income,Other/Unknown
-South Africa,2023,69950,2521801141,Africa,Upper-Middle Income,Other/Unknown
-South Africa,2024,90471,3044360891,Africa,Upper-Middle Income,Other/Unknown
-South Korea,2019,15419,297651983,Other,High Income,Eastern
-South Korea,2020,28400,361302082,Other,High Income,Eastern
-South Korea,2021,36409,572452315,Other,High Income,Eastern
-South Korea,2022,29216,875621156,Other,High Income,Eastern
-South Korea,2023,35254,877591085,Other,High Income,Eastern
-South Korea,2024,29084,939580849,Other,High Income,Eastern
-Spain,2019,31731,334885510,Other,Other/Unknown,Western
-Spain,2020,61452,479903741,Other,Other/Unknown,Western
-Spain,2021,76578,692305090,Other,Other/Unknown,Western
-Spain,2022,71212,1027272058,Other,Other/Unknown,Western
-Spain,2023,69263,1266113273,Other,Other/Unknown,Western
-Spain,2024,85721,1244474108,Other,Other/Unknown,Western
-Sri Lanka,2019,331,5241631,Other,Other/Unknown,Other/Unknown
-Sri Lanka,2020,728,7133861,Other,Other/Unknown,Other/Unknown
-Sri Lanka,2021,779,11815830,Other,Other/Unknown,Other/Unknown
-Sri Lanka,2022,878,18551545,Other,Other/Unknown,Other/Unknown
-Sri Lanka,2023,750,22450558,Other,Other/Unknown,Other/Unknown
-Sri Lanka,2024,974,22772342,Other,Other/Unknown,Other/Unknown
-Sweden,2019,43233,288695571,Other,High Income,Other/Unknown
-Sweden,2020,61690,330876641,Other,High Income,Other/Unknown
-Sweden,2021,78842,615839471,Other,High Income,Other/Unknown
-Sweden,2022,85983,882362917,Other,High Income,Other/Unknown
-Sweden,2023,81499,876268421,Other,High Income,Other/Unknown
-Sweden,2024,85663,1267709488,Other,High Income,Other/Unknown
-Switzerland,2019,13044,102495918,Other,High Income,Other/Unknown
-Switzerland,2020,18748,125191128,Other,High Income,Other/Unknown
-Switzerland,2021,14344,204927558,Other,High Income,Other/Unknown
-Switzerland,2022,15949,325885360,Other,High Income,Other/Unknown
-Switzerland,2023,21098,270071586,Other,High Income,Other/Unknown
-Switzerland,2024,22539,532068262,Other,High Income,Other/Unknown
-Taiwan,2019,16960,205458284,Other,Other/Unknown,Other/Unknown
-Taiwan,2020,30125,181937259,Other,Other/Unknown,Other/Unknown
-Taiwan,2021,23412,403540295,Other,Other/Unknown,Other/Unknown
-Taiwan,2022,29178,597702921,Other,Other/Unknown,Other/Unknown
-Taiwan,2023,29158,866022568,Other,Other/Unknown,Other/Unknown
-Taiwan,2024,28801,843230608,Other,Other/Unknown,Other/Unknown
-Tanzania,2019,3052,14935783,Other,Low Income,Other/Unknown
-Tanzania,2020,4171,21277746,Other,Low Income,Other/Unknown
-Tanzania,2021,4917,23961290,Other,Low Income,Other/Unknown
-Tanzania,2022,4362,66303435,Other,Low Income,Other/Unknown
-Tanzania,2023,6044,60317924,Other,Low Income,Other/Unknown
-Tanzania,2024,5223,56671764,Other,Low Income,Other/Unknown
-Thailand,2019,13088,122082224,Other,Upper-Middle Income,Eastern
-Thailand,2020,24580,147126154,Other,Upper-Middle Income,Eastern
-Thailand,2021,28961,247890207,Other,Upper-Middle Income,Eastern
-Thailand,2022,33569,298227985,Other,Upper-Middle Income,Eastern
-Thailand,2023,28129,425375149,Other,Upper-Middle Income,Eastern
-Thailand,2024,31341,534867939,Other,Upper-Middle Income,Eastern
-Turkey,2019,16525,208240641,Other,Upper-Middle Income,Other/Unknown
-Turkey,2020,28232,259185589,Other,Upper-Middle Income,Other/Unknown
-Turkey,2021,30367,392571792,Other,Upper-Middle Income,Other/Unknown
-Turkey,2022,34165,626586973,Other,Upper-Middle Income,Other/Unknown
-Turkey,2023,32269,761641603,Other,Upper-Middle Income,Other/Unknown
-Turkey,2024,37909,901844914,Other,Upper-Middle Income,Other/Unknown
-UK,2019,182883,1342411802,Other,High Income,Western
-UK,2020,427367,1590816673,Other,High Income,Western
-UK,2021,357679,2740678986,Other,High Income,Western
-UK,2022,338939,5037818889,Other,High Income,Western
-UK,2023,378554,3906023589,Other,High Income,Western
-UK,2024,481671,6379113995,Other,High Income,Western
-USA,2019,428355,3302744547,North America,High Income,Western
-USA,2020,796395,3906715208,North America,High Income,Western
-USA,2021,829571,6466618579,North America,High Income,Western
-USA,2022,769205,10304392551,North America,High Income,Western
-USA,2023,876894,11916782073,North America,High Income,Western
-USA,2024,946966,14457011740,North America,High Income,Western
-Uganda,2019,482,3896487,Other,Low Income,Other/Unknown
-Uganda,2020,1164,4550806,Other,Low Income,Other/Unknown
-Uganda,2021,1058,6096969,Other,Low Income,Other/Unknown
-Uganda,2022,987,10859684,Other,Low Income,Other/Unknown
-Uganda,2023,1300,17084728,Other,Low Income,Other/Unknown
-Uganda,2024,1188,15809008,Other,Low Income,Other/Unknown
-Ukraine,2019,65629,1290652585,Other,High Income,Western
-Ukraine,2020,102244,1449674414,Other,High Income,Western
-Ukraine,2021,110254,2590458387,Other,High Income,Western
-Ukraine,2022,111410,3585569523,Other,High Income,Western
-Ukraine,2023,117532,4171982394,Other,High Income,Western
-Ukraine,2024,160414,5161336915,Other,High Income,Western
-United Arab Emirates,2019,5503,48101706,Other,Other/Unknown,Other/Unknown
-United Arab Emirates,2020,7390,81178182,Other,Other/Unknown,Other/Unknown
-United Arab Emirates,2021,10164,131934602,Other,Other/Unknown,Other/Unknown
-United Arab Emirates,2022,10042,187062157,Other,Other/Unknown,Other/Unknown
-United Arab Emirates,2023,11034,244238485,Other,Other/Unknown,Other/Unknown
-United Arab Emirates,2024,12071,280815215,Other,Other/Unknown,Other/Unknown
-Uzbekistan,2019,731,10115233,Other,Lower-Middle Income,Other/Unknown
-Uzbekistan,2020,1305,11920427,Other,Lower-Middle Income,Other/Unknown
-Uzbekistan,2021,1459,21396751,Other,Lower-Middle Income,Other/Unknown
-Uzbekistan,2022,1487,30686669,Other,Lower-Middle Income,Other/Unknown
-Uzbekistan,2023,1414,31812459,Other,Lower-Middle Income,Other/Unknown
-Uzbekistan,2024,2014,52122352,Other,Lower-Middle Income,Other/Unknown
-Venezuela,2019,7541,79397063,Other,Other/Unknown,Other/Unknown
-Venezuela,2020,11980,113825151,Other,Other/Unknown,Other/Unknown
-Venezuela,2021,16529,168584712,Other,Other/Unknown,Other/Unknown
-Venezuela,2022,17147,178891015,Other,Other/Unknown,Other/Unknown
-Venezuela,2023,11897,306878450,Other,Other/Unknown,Other/Unknown
-Venezuela,2024,20795,361746565,Other,Other/Unknown,Other/Unknown
-Vietnam,2019,21505,381138510,Other,Lower-Middle Income,Eastern
-Vietnam,2020,53039,388987922,Other,Lower-Middle Income,Eastern
-Vietnam,2021,40567,624738922,Other,Lower-Middle Income,Eastern
-Vietnam,2022,36128,971673882,Other,Lower-Middle Income,Eastern
-Vietnam,2023,51411,1166933394,Other,Lower-Middle Income,Eastern
-Vietnam,2024,50706,1427085868,Other,Lower-Middle Income,Eastern
-Yemen,2019,216,2714177,Other,Low Income,Other/Unknown
-Yemen,2020,362,2673181,Other,Low Income,Other/Unknown
-Yemen,2021,391,6237592,Other,Low Income,Other/Unknown
-Yemen,2022,482,9797841,Other,Low Income,Other/Unknown
-Yemen,2023,400,9470640,Other,Low Income,Other/Unknown
-Yemen,2024,330,9792860,Other,Low Income,Other/Unknown
-Zimbabwe,2019,499,2509401,Other,Low Income,Other/Unknown
-Zimbabwe,2020,722,5065509,Other,Low Income,Other/Unknown
-Zimbabwe,2021,775,6764235,Other,Low Income,Other/Unknown
-Zimbabwe,2022,729,10101328,Other,Low Income,Other/Unknown
-Zimbabwe,2023,688,9698258,Other,Low Income,Other/Unknown
-Zimbabwe,2024,744,14344326,Other,Low Income,Other/Unknown
+Country,Year,Complaints,Losses,Continent,Nation_Wealth,West_or_East,Pandemic_Era,Is_Leap_Year
+Afghanistan,2019,612,9218912,Other,Low Income,Other/Unknown,Pre-Pandemic,False
+Afghanistan,2020,1095,8257595,Other,Low Income,Other/Unknown,Post-Pandemic,True
+Afghanistan,2021,1226,17334907,Other,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2022,982,36751138,Other,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2023,1150,38527355,Other,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2024,1373,37684396,Other,Low Income,Other/Unknown,Post-Pandemic,True
+Albania,2019,1261,15433066,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Albania,2020,2450,15481216,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Albania,2021,2114,25528929,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Albania,2022,1996,37709595,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Albania,2023,2178,46707757,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Albania,2024,2218,56062725,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Angola,2019,730,4218960,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Angola,2020,1471,4388316,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Angola,2021,1207,8467667,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Angola,2022,1222,13342081,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Angola,2023,1336,15792180,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Angola,2024,1438,18499615,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Argentina,2019,4555,106144702,South America,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Argentina,2020,6055,96414427,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Argentina,2021,8548,212672747,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Argentina,2022,6752,399595418,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Argentina,2023,8511,372985785,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Argentina,2024,8857,448223952,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Armenia,2019,2402,25413556,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Armenia,2020,3290,38075278,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Armenia,2021,3551,44322212,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Armenia,2022,3656,90439473,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Armenia,2023,5041,114193013,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Armenia,2024,3466,111820067,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Australia,2019,32061,286422142,Oceania,High Income,Western,Pre-Pandemic,False
+Australia,2020,55024,399593060,Oceania,High Income,Western,Post-Pandemic,True
+Australia,2021,54330,664501941,Oceania,High Income,Western,Post-Pandemic,False
+Australia,2022,43610,974136831,Oceania,High Income,Western,Post-Pandemic,False
+Australia,2023,60204,1241532793,Oceania,High Income,Western,Post-Pandemic,False
+Australia,2024,64390,1491968034,Oceania,High Income,Western,Post-Pandemic,True
+Austria,2019,6942,47306368,Europe,High Income,Western,Pre-Pandemic,False
+Austria,2020,10963,41464758,Europe,High Income,Western,Post-Pandemic,True
+Austria,2021,15412,116199865,Europe,High Income,Western,Post-Pandemic,False
+Austria,2022,11239,133170619,Europe,High Income,Western,Post-Pandemic,False
+Austria,2023,9614,163158856,Europe,High Income,Western,Post-Pandemic,False
+Austria,2024,14534,145551079,Europe,High Income,Western,Post-Pandemic,True
+Azerbaijan,2019,1991,26944580,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Azerbaijan,2020,4183,39283188,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Azerbaijan,2021,4117,55559557,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Azerbaijan,2022,4385,66376883,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Azerbaijan,2023,4967,85199840,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Azerbaijan,2024,5706,78785876,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bahrain,2019,4666,64103022,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Bahrain,2020,10094,93786879,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bahrain,2021,10917,131102183,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bahrain,2022,10208,183388664,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bahrain,2023,11853,234614837,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bahrain,2024,12837,277949474,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bangladesh,2019,11970,202462502,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Bangladesh,2020,16637,257563277,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Bangladesh,2021,21137,400343277,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Bangladesh,2022,25822,673263063,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Bangladesh,2023,26652,522834001,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Bangladesh,2024,21185,764697415,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Belarus,2019,5622,40335091,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Belarus,2020,8033,45133084,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Belarus,2021,8498,109694772,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belarus,2022,8395,143916635,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belarus,2023,8399,163144740,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belarus,2024,9192,171624833,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Belgium,2019,6275,61314011,Europe,High Income,Western,Pre-Pandemic,False
+Belgium,2020,10620,81868291,Europe,High Income,Western,Post-Pandemic,True
+Belgium,2021,11842,142566044,Europe,High Income,Western,Post-Pandemic,False
+Belgium,2022,10859,217821448,Europe,High Income,Western,Post-Pandemic,False
+Belgium,2023,11848,184239517,Europe,High Income,Western,Post-Pandemic,False
+Belgium,2024,12375,303148050,Europe,High Income,Western,Post-Pandemic,True
+Belize,2019,323,2498015,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Belize,2020,548,4146715,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Belize,2021,612,5194911,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belize,2022,570,8430382,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belize,2023,723,9110927,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Belize,2024,572,12538008,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bosnia and Herzegovina,2019,7100,48232941,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Bosnia and Herzegovina,2020,11871,35153818,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bosnia and Herzegovina,2021,13041,55776221,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bosnia and Herzegovina,2022,11519,132423841,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bosnia and Herzegovina,2023,13156,148850878,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Bosnia and Herzegovina,2024,13605,191209005,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Brazil,2019,113294,571530336,South America,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Brazil,2020,163299,749658021,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Brazil,2021,174117,894516056,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Brazil,2022,155028,1644488725,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Brazil,2023,158423,1808030603,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Brazil,2024,248765,2590565434,South America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+British Virgin Islands,2019,813,14172668,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+British Virgin Islands,2020,1840,10930431,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+British Virgin Islands,2021,1995,33292428,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+British Virgin Islands,2022,1850,48459372,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+British Virgin Islands,2023,2123,48451711,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+British Virgin Islands,2024,2194,44568346,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Bulgaria,2019,14189,118129647,Europe,Upper-Middle Income,Western,Pre-Pandemic,False
+Bulgaria,2020,26712,111207806,Europe,Upper-Middle Income,Western,Post-Pandemic,True
+Bulgaria,2021,24968,248788813,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Bulgaria,2022,23525,338814414,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Bulgaria,2023,26404,443783119,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Bulgaria,2024,24208,522143452,Europe,Upper-Middle Income,Western,Post-Pandemic,True
+Cambodia,2019,8019,75168331,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Cambodia,2020,10613,80437904,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Cambodia,2021,11881,131850198,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Cambodia,2022,14054,200408531,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Cambodia,2023,10343,241848538,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Cambodia,2024,13086,294425335,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Canada,2019,36655,673206760,North America,High Income,Western,Pre-Pandemic,False
+Canada,2020,72594,793553716,North America,High Income,Western,Post-Pandemic,True
+Canada,2021,73526,1161857486,North America,High Income,Western,Post-Pandemic,False
+Canada,2022,71962,1857378939,North America,High Income,Western,Post-Pandemic,False
+Canada,2023,54220,2277570974,North America,High Income,Western,Post-Pandemic,False
+Canada,2024,71796,2542329668,North America,High Income,Western,Post-Pandemic,True
+Chile,2019,1409,49590061,South America,High Income,Other/Unknown,Pre-Pandemic,False
+Chile,2020,2772,40920566,South America,High Income,Other/Unknown,Post-Pandemic,True
+Chile,2021,2624,60731300,South America,High Income,Other/Unknown,Post-Pandemic,False
+Chile,2022,2451,113895219,South America,High Income,Other/Unknown,Post-Pandemic,False
+Chile,2023,3034,129479043,South America,High Income,Other/Unknown,Post-Pandemic,False
+Chile,2024,3501,195674840,South America,High Income,Other/Unknown,Post-Pandemic,True
+China,2019,449305,2532007781,Asia,Upper-Middle Income,Eastern,Pre-Pandemic,False
+China,2020,705690,3061083799,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+China,2021,940125,5067323422,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+China,2022,764388,7405960835,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+China,2023,678224,8997589579,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+China,2024,868309,11299124337,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Colombia,2019,6865,69494853,South America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Colombia,2020,13886,64216061,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Colombia,2021,15699,109189140,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Colombia,2022,15657,164002220,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Colombia,2023,17214,203249469,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Colombia,2024,14814,285005300,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Costa Rica,2019,414,4698147,North America,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Costa Rica,2020,659,7090087,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Costa Rica,2021,815,11177920,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Costa Rica,2022,770,16613844,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Costa Rica,2023,1013,20887823,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Costa Rica,2024,831,24076527,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Croatia,2019,1468,8092129,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Croatia,2020,1658,10595145,Europe,Other/Unknown,Western,Post-Pandemic,True
+Croatia,2021,2326,18793743,Europe,Other/Unknown,Western,Post-Pandemic,False
+Croatia,2022,1879,24393753,Europe,Other/Unknown,Western,Post-Pandemic,False
+Croatia,2023,2280,28853906,Europe,Other/Unknown,Western,Post-Pandemic,False
+Croatia,2024,3054,34319762,Europe,Other/Unknown,Western,Post-Pandemic,True
+Cyprus,2019,999,5686522,Europe,High Income,Western,Pre-Pandemic,False
+Cyprus,2020,1706,6853488,Europe,High Income,Western,Post-Pandemic,True
+Cyprus,2021,1762,12133741,Europe,High Income,Western,Post-Pandemic,False
+Cyprus,2022,1723,17339298,Europe,High Income,Western,Post-Pandemic,False
+Cyprus,2023,2345,19199921,Europe,High Income,Western,Post-Pandemic,False
+Cyprus,2024,1838,19483205,Europe,High Income,Western,Post-Pandemic,True
+Czech Republic,2019,30211,172991200,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Czech Republic,2020,47442,212529097,Europe,Other/Unknown,Western,Post-Pandemic,True
+Czech Republic,2021,68328,431356435,Europe,Other/Unknown,Western,Post-Pandemic,False
+Czech Republic,2022,49178,514944367,Europe,Other/Unknown,Western,Post-Pandemic,False
+Czech Republic,2023,60855,600351173,Europe,Other/Unknown,Western,Post-Pandemic,False
+Czech Republic,2024,60358,718180351,Europe,Other/Unknown,Western,Post-Pandemic,True
+Denmark,2019,5670,38097127,Europe,High Income,Western,Pre-Pandemic,False
+Denmark,2020,9143,37191643,Europe,High Income,Western,Post-Pandemic,True
+Denmark,2021,10529,78734767,Europe,High Income,Western,Post-Pandemic,False
+Denmark,2022,9954,119930937,Europe,High Income,Western,Post-Pandemic,False
+Denmark,2023,10211,117811560,Europe,High Income,Western,Post-Pandemic,False
+Denmark,2024,8616,125845887,Europe,High Income,Western,Post-Pandemic,True
+Dominican Republic,2019,7728,39752918,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Dominican Republic,2020,14328,43312940,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Dominican Republic,2021,13998,104934081,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Dominican Republic,2022,16645,102536313,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Dominican Republic,2023,14968,168606659,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Dominican Republic,2024,15309,165843869,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Ecuador,2019,6226,38064072,South America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Ecuador,2020,8187,47318231,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Ecuador,2021,10130,75385877,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ecuador,2022,8819,127649437,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ecuador,2023,9335,142120063,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ecuador,2024,12406,197235551,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Egypt,2019,1426,21281601,Africa,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Egypt,2020,1971,29498445,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Egypt,2021,2722,36567441,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Egypt,2022,2216,54836127,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Egypt,2023,2482,68775642,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Egypt,2024,2688,99156499,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+El Salvador,2019,429,7625619,North America,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+El Salvador,2020,711,6605847,North America,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+El Salvador,2021,749,14236747,North America,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+El Salvador,2022,825,19942832,North America,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+El Salvador,2023,791,29082153,North America,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+El Salvador,2024,872,29969414,North America,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Estonia,2019,9712,63377416,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Estonia,2020,16004,81946736,Europe,Other/Unknown,Western,Post-Pandemic,True
+Estonia,2021,12971,102711672,Europe,Other/Unknown,Western,Post-Pandemic,False
+Estonia,2022,14979,169799799,Europe,Other/Unknown,Western,Post-Pandemic,False
+Estonia,2023,18399,210872015,Europe,Other/Unknown,Western,Post-Pandemic,False
+Estonia,2024,20046,244151604,Europe,Other/Unknown,Western,Post-Pandemic,True
+Eswatini,2019,6293,36939924,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Eswatini,2020,9344,55886392,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Eswatini,2021,9415,73533565,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Eswatini,2022,8944,107487425,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Eswatini,2023,10325,110748724,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Eswatini,2024,11752,162203379,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Finland,2019,14427,179710211,Europe,High Income,Western,Pre-Pandemic,False
+Finland,2020,23146,209024271,Europe,High Income,Western,Post-Pandemic,True
+Finland,2021,17554,442442726,Europe,High Income,Western,Post-Pandemic,False
+Finland,2022,29642,513111722,Europe,High Income,Western,Post-Pandemic,False
+Finland,2023,26918,712562892,Europe,High Income,Western,Post-Pandemic,False
+Finland,2024,25890,721920497,Europe,High Income,Western,Post-Pandemic,True
+France,2019,160810,967758695,Europe,High Income,Western,Pre-Pandemic,False
+France,2020,211096,1099523432,Europe,High Income,Western,Post-Pandemic,True
+France,2021,204190,2305495866,Europe,High Income,Western,Post-Pandemic,False
+France,2022,183886,3043377444,Europe,High Income,Western,Post-Pandemic,False
+France,2023,297363,3212220994,Europe,High Income,Western,Post-Pandemic,False
+France,2024,208832,4025659986,Europe,High Income,Western,Post-Pandemic,True
+Georgia,2019,2158,11248342,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Georgia,2020,2749,13581482,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Georgia,2021,2949,22863562,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Georgia,2022,2760,33926202,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Georgia,2023,3265,34237776,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Georgia,2024,3306,47876570,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Germany,2019,95136,1559415577,Europe,High Income,Western,Pre-Pandemic,False
+Germany,2020,148495,2432407746,Europe,High Income,Western,Post-Pandemic,True
+Germany,2021,164061,2226372097,Europe,High Income,Western,Post-Pandemic,False
+Germany,2022,203346,3442137764,Europe,High Income,Western,Post-Pandemic,False
+Germany,2023,178259,5575128098,Europe,High Income,Western,Post-Pandemic,False
+Germany,2024,146731,5279486289,Europe,High Income,Western,Post-Pandemic,True
+Ghana,2019,463,6103570,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Ghana,2020,842,6502100,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Ghana,2021,866,11183262,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ghana,2022,812,20023734,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ghana,2023,765,22014808,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Ghana,2024,1229,23766287,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Greece,2019,5785,41506851,Europe,High Income,Western,Pre-Pandemic,False
+Greece,2020,10490,45286391,Europe,High Income,Western,Post-Pandemic,True
+Greece,2021,10211,100042024,Europe,High Income,Western,Post-Pandemic,False
+Greece,2022,9740,115032546,Europe,High Income,Western,Post-Pandemic,False
+Greece,2023,10849,134866182,Europe,High Income,Western,Post-Pandemic,False
+Greece,2024,8408,157051155,Europe,High Income,Western,Post-Pandemic,True
+Guatemala,2019,3799,23310755,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Guatemala,2020,6358,26291913,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Guatemala,2021,4657,51948711,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guatemala,2022,6416,53100301,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guatemala,2023,6169,84710783,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guatemala,2024,6949,70899579,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Guinea,2019,316,2942671,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Guinea,2020,546,4484265,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Guinea,2021,528,5487083,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guinea,2022,597,6648059,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guinea,2023,655,8907146,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Guinea,2024,660,11773707,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Honduras,2019,7668,77996271,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Honduras,2020,12844,89984923,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Honduras,2021,13421,152669227,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Honduras,2022,12760,224899521,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Honduras,2023,13581,264720338,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Honduras,2024,10132,282288918,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Hong Kong,2019,113923,746613837,Asia,High Income,Eastern,Pre-Pandemic,False
+Hong Kong,2020,237997,823420937,Asia,High Income,Eastern,Post-Pandemic,True
+Hong Kong,2021,225295,1732897646,Asia,High Income,Eastern,Post-Pandemic,False
+Hong Kong,2022,254729,2360701043,Asia,High Income,Eastern,Post-Pandemic,False
+Hong Kong,2023,242261,3458797505,Asia,High Income,Eastern,Post-Pandemic,False
+Hong Kong,2024,248576,2863308167,Asia,High Income,Eastern,Post-Pandemic,True
+Hungary,2019,3707,75257661,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Hungary,2020,6227,61005748,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Hungary,2021,6390,140588839,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Hungary,2022,4726,198716263,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Hungary,2023,4484,309048399,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Hungary,2024,7157,274342202,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Iceland,2019,392,3053735,Europe,High Income,Western,Pre-Pandemic,False
+Iceland,2020,606,3294003,Europe,High Income,Western,Post-Pandemic,True
+Iceland,2021,655,5624854,Europe,High Income,Western,Post-Pandemic,False
+Iceland,2022,622,7103744,Europe,High Income,Western,Post-Pandemic,False
+Iceland,2023,751,11241606,Europe,High Income,Western,Post-Pandemic,False
+Iceland,2024,609,14745257,Europe,High Income,Western,Post-Pandemic,True
+India,2019,50473,989343380,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+India,2020,104570,1155524769,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+India,2021,89534,2062881042,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+India,2022,82980,2898740652,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+India,2023,96339,3640042741,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+India,2024,98092,4164403367,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Indonesia,2019,32221,437808210,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Indonesia,2020,67619,598180089,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Indonesia,2021,57876,972015041,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Indonesia,2022,56299,1465738977,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Indonesia,2023,59403,2089001077,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Indonesia,2024,53925,2432253507,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Iran,2019,46337,442237902,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Iran,2020,61727,508268749,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Iran,2021,74786,843019965,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Iran,2022,41924,1314548035,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Iran,2023,69872,1502603054,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Iran,2024,74119,1614663021,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Iraq,2019,32400,191135345,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Iraq,2020,56447,192067847,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Iraq,2021,59837,313674949,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Iraq,2022,41170,605452580,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Iraq,2023,63177,524182382,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Iraq,2024,70055,803018708,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Ireland,2019,16178,316218523,Europe,High Income,Western,Pre-Pandemic,False
+Ireland,2020,22105,382100626,Europe,High Income,Western,Post-Pandemic,True
+Ireland,2021,25510,544309794,Europe,High Income,Western,Post-Pandemic,False
+Ireland,2022,25234,770682201,Europe,High Income,Western,Post-Pandemic,False
+Ireland,2023,28289,856830691,Europe,High Income,Western,Post-Pandemic,False
+Ireland,2024,31525,1499685797,Europe,High Income,Western,Post-Pandemic,True
+Israel,2019,7870,72760275,Asia,High Income,Western,Pre-Pandemic,False
+Israel,2020,9794,89001013,Asia,High Income,Western,Post-Pandemic,True
+Israel,2021,13563,110534215,Asia,High Income,Western,Post-Pandemic,False
+Israel,2022,13754,225640682,Asia,High Income,Western,Post-Pandemic,False
+Israel,2023,14982,281333883,Asia,High Income,Western,Post-Pandemic,False
+Israel,2024,16114,310489542,Asia,High Income,Western,Post-Pandemic,True
+Italy,2019,42362,291496322,Europe,High Income,Western,Pre-Pandemic,False
+Italy,2020,77806,360913944,Europe,High Income,Western,Post-Pandemic,True
+Italy,2021,99708,667686968,Europe,High Income,Western,Post-Pandemic,False
+Italy,2022,74277,967404316,Europe,High Income,Western,Post-Pandemic,False
+Italy,2023,84197,1192949271,Europe,High Income,Western,Post-Pandemic,False
+Italy,2024,91776,1328578738,Europe,High Income,Western,Post-Pandemic,True
+Japan,2019,86934,799709881,Asia,High Income,Eastern,Pre-Pandemic,False
+Japan,2020,159519,885281428,Asia,High Income,Eastern,Post-Pandemic,True
+Japan,2021,161803,1088839354,Asia,High Income,Eastern,Post-Pandemic,False
+Japan,2022,157306,2253466948,Asia,High Income,Eastern,Post-Pandemic,False
+Japan,2023,170208,1995347480,Asia,High Income,Eastern,Post-Pandemic,False
+Japan,2024,182470,3393546251,Asia,High Income,Eastern,Post-Pandemic,True
+Jordan,2019,431,3218885,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Jordan,2020,796,3206926,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Jordan,2021,882,5933560,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Jordan,2022,868,8015475,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Jordan,2023,833,11136442,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Jordan,2024,955,11618599,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Kazakhstan,2019,9655,215224978,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Kazakhstan,2020,16735,228613185,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Kazakhstan,2021,17175,334183044,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kazakhstan,2022,13293,490818787,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kazakhstan,2023,12134,642098116,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kazakhstan,2024,18341,883976919,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Kenya,2019,2410,19120184,Africa,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Kenya,2020,3367,24505055,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Kenya,2021,3777,41314068,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Kenya,2022,3176,67202983,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Kenya,2023,3993,68532563,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Kenya,2024,4245,85415845,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Kyrgyzstan,2019,5029,90758012,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Kyrgyzstan,2020,8607,127676103,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Kyrgyzstan,2021,8796,223117975,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kyrgyzstan,2022,6508,282601093,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kyrgyzstan,2023,11930,316897412,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Kyrgyzstan,2024,10285,384798989,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Latvia,2019,4183,27217794,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Latvia,2020,9046,33853664,Europe,Other/Unknown,Western,Post-Pandemic,True
+Latvia,2021,7659,50261795,Europe,Other/Unknown,Western,Post-Pandemic,False
+Latvia,2022,5668,79401403,Europe,Other/Unknown,Western,Post-Pandemic,False
+Latvia,2023,7348,95600192,Europe,Other/Unknown,Western,Post-Pandemic,False
+Latvia,2024,8140,141459082,Europe,Other/Unknown,Western,Post-Pandemic,True
+Lebanon,2019,4337,39296596,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Lebanon,2020,6880,41501339,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Lebanon,2021,5665,72133701,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Lebanon,2022,8680,116848478,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Lebanon,2023,7894,120470644,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Lebanon,2024,6248,148621809,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Libya,2019,1154,7827594,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Libya,2020,1870,9907911,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Libya,2021,1825,18937753,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Libya,2022,1908,25303239,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Libya,2023,2329,26933272,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Libya,2024,2359,35814196,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Lithuania,2019,5463,58251632,Europe,High Income,Western,Pre-Pandemic,False
+Lithuania,2020,8981,86867615,Europe,High Income,Western,Post-Pandemic,True
+Lithuania,2021,11359,120550579,Europe,High Income,Western,Post-Pandemic,False
+Lithuania,2022,9666,188147563,Europe,High Income,Western,Post-Pandemic,False
+Lithuania,2023,8433,315202293,Europe,High Income,Western,Post-Pandemic,False
+Lithuania,2024,10050,257790222,Europe,High Income,Western,Post-Pandemic,True
+Luxembourg,2019,612,11718536,Europe,High Income,Western,Pre-Pandemic,False
+Luxembourg,2020,1035,14032708,Europe,High Income,Western,Post-Pandemic,True
+Luxembourg,2021,1055,22175186,Europe,High Income,Western,Post-Pandemic,False
+Luxembourg,2022,812,32981892,Europe,High Income,Western,Post-Pandemic,False
+Luxembourg,2023,951,41315061,Europe,High Income,Western,Post-Pandemic,False
+Luxembourg,2024,1099,45198080,Europe,High Income,Western,Post-Pandemic,True
+Malaysia,2019,3163,53285151,Asia,Upper-Middle Income,Eastern,Pre-Pandemic,False
+Malaysia,2020,5608,55360884,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Malaysia,2021,5851,131437045,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Malaysia,2022,6937,187356525,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Malaysia,2023,6006,226431418,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Malaysia,2024,5931,344158750,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Maldives,2019,337,2832717,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Maldives,2020,668,5022918,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Maldives,2021,574,4362630,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Maldives,2022,577,9698308,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Maldives,2023,778,11432984,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Maldives,2024,1057,13304758,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Malta,2019,642,15863991,Europe,High Income,Western,Pre-Pandemic,False
+Malta,2020,1589,19538664,Europe,High Income,Western,Post-Pandemic,True
+Malta,2021,1402,32583587,Europe,High Income,Western,Post-Pandemic,False
+Malta,2022,1547,39902875,Europe,High Income,Western,Post-Pandemic,False
+Malta,2023,1821,56426606,Europe,High Income,Western,Post-Pandemic,False
+Malta,2024,1347,66224639,Europe,High Income,Western,Post-Pandemic,True
+Mexico,2019,6770,118445689,North America,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Mexico,2020,10216,144440919,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Mexico,2021,9626,238351830,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Mexico,2022,12425,365325453,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Mexico,2023,12870,446395507,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Mexico,2024,17969,506585917,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Moldova,2019,5156,29234480,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Moldova,2020,6684,31714733,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Moldova,2021,9518,54354359,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Moldova,2022,5551,100461762,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Moldova,2023,7045,89668934,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Moldova,2024,9086,118929790,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Mongolia,2019,1064,26326159,Other,Other/Unknown,Eastern,Pre-Pandemic,False
+Mongolia,2020,1937,32473442,Other,Other/Unknown,Eastern,Post-Pandemic,True
+Mongolia,2021,1514,52528265,Other,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2022,2321,98551738,Other,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2023,1999,93152308,Other,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2024,2253,123314277,Other,Other/Unknown,Eastern,Post-Pandemic,True
+Mozambique,2019,1773,14590391,Africa,Low Income,Other/Unknown,Pre-Pandemic,False
+Mozambique,2020,3510,16760987,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Mozambique,2021,3203,29921649,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Mozambique,2022,3254,33495225,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Mozambique,2023,3320,47474414,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Mozambique,2024,4358,60688754,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Myanmar,2019,2100,12568012,Asia,Other/Unknown,Eastern,Pre-Pandemic,False
+Myanmar,2020,3264,15686730,Asia,Other/Unknown,Eastern,Post-Pandemic,True
+Myanmar,2021,3638,28074566,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Myanmar,2022,2329,36636924,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Myanmar,2023,3655,44240763,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Myanmar,2024,3960,55325202,Asia,Other/Unknown,Eastern,Post-Pandemic,True
+Namibia,2019,239,2779417,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Namibia,2020,430,5249534,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Namibia,2021,647,7782176,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Namibia,2022,602,11532811,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Namibia,2023,629,12975631,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Namibia,2024,718,16184254,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Nepal,2019,1046,9903690,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Nepal,2020,2207,11937086,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Nepal,2021,2485,19275846,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nepal,2022,2130,28683974,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nepal,2023,2992,36890222,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nepal,2024,2805,43141285,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Netherlands,2019,49692,572304502,Europe,High Income,Western,Pre-Pandemic,False
+Netherlands,2020,85089,895396401,Europe,High Income,Western,Post-Pandemic,True
+Netherlands,2021,95372,1437353585,Europe,High Income,Western,Post-Pandemic,False
+Netherlands,2022,80348,2216753376,Europe,High Income,Western,Post-Pandemic,False
+Netherlands,2023,83301,3079554598,Europe,High Income,Western,Post-Pandemic,False
+Netherlands,2024,97619,3320490586,Europe,High Income,Western,Post-Pandemic,True
+New Zealand,2019,1662,13317391,Oceania,High Income,Western,Pre-Pandemic,False
+New Zealand,2020,3713,18466612,Oceania,High Income,Western,Post-Pandemic,True
+New Zealand,2021,4210,44661082,Oceania,High Income,Western,Post-Pandemic,False
+New Zealand,2022,3972,58125970,Oceania,High Income,Western,Post-Pandemic,False
+New Zealand,2023,4599,70383275,Oceania,High Income,Western,Post-Pandemic,False
+New Zealand,2024,4488,67076977,Oceania,High Income,Western,Post-Pandemic,True
+Nicaragua,2019,859,5969337,Other,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Nicaragua,2020,1400,5175487,Other,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Nicaragua,2021,1584,9004728,Other,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nicaragua,2022,1571,17315195,Other,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nicaragua,2023,1642,22964248,Other,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Nicaragua,2024,1453,25763072,Other,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Nigeria,2019,1781,34340619,Africa,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Nigeria,2020,3074,35736203,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Nigeria,2021,2203,56107226,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Nigeria,2022,3687,79935245,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Nigeria,2023,3556,102912199,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Nigeria,2024,3601,118105851,Africa,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Norway,2019,4031,45713939,Europe,High Income,Western,Pre-Pandemic,False
+Norway,2020,6733,54542901,Europe,High Income,Western,Post-Pandemic,True
+Norway,2021,10130,64274074,Europe,High Income,Western,Post-Pandemic,False
+Norway,2022,9695,108540856,Europe,High Income,Western,Post-Pandemic,False
+Norway,2023,10366,195621525,Europe,High Income,Western,Post-Pandemic,False
+Norway,2024,11172,187551761,Europe,High Income,Western,Post-Pandemic,True
+Oman,2019,2814,14755487,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Oman,2020,3882,14987636,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Oman,2021,3538,21448883,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Oman,2022,4068,28911996,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Oman,2023,4468,49837425,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Oman,2024,4692,66634987,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Pakistan,2019,28492,181705646,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Pakistan,2020,52024,200518146,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Pakistan,2021,40944,341893089,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Pakistan,2022,48572,681501827,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Pakistan,2023,53390,586037584,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Pakistan,2024,71700,786591645,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Palestine,2019,1784,22483591,Asia,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Palestine,2020,2890,25423219,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Palestine,2021,3352,48918464,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Palestine,2022,3210,57796003,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Palestine,2023,3378,69292891,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Palestine,2024,3811,66002407,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Panama,2019,963,6611775,North America,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Panama,2020,1634,7821630,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Panama,2021,1280,14020511,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Panama,2022,1594,20058995,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Panama,2023,1272,24329856,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Panama,2024,1902,28577503,North America,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Papua New Guinea,2019,651,6153461,Oceania,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Papua New Guinea,2020,1016,6431254,Oceania,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Papua New Guinea,2021,1065,12315882,Oceania,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Papua New Guinea,2022,1073,18509434,Oceania,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Papua New Guinea,2023,1062,23087850,Oceania,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Papua New Guinea,2024,1353,27177455,Oceania,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Paraguay,2019,1913,10967865,South America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Paraguay,2020,2992,13815152,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Paraguay,2021,3188,26677869,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Paraguay,2022,3768,40114594,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Paraguay,2023,3487,33579643,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Paraguay,2024,2678,45168957,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Peru,2019,4435,27363061,South America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Peru,2020,7339,27058091,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Peru,2021,8250,53418304,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Peru,2022,7956,76468535,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Peru,2023,9527,101727109,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Peru,2024,9251,91797172,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Philippines,2019,5688,179433874,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Philippines,2020,10642,166452785,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Philippines,2021,8192,276511773,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Philippines,2022,11186,382348042,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Philippines,2023,11365,534640287,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Philippines,2024,12797,576134379,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Poland,2019,21903,390365695,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Poland,2020,42442,362788093,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Poland,2021,37317,596864046,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Poland,2022,48071,1207252948,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Poland,2023,49459,1040011485,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Poland,2024,40855,1359253205,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Portugal,2019,1119,13870074,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Portugal,2020,2020,12391290,Europe,Other/Unknown,Western,Post-Pandemic,True
+Portugal,2021,2102,18205913,Europe,Other/Unknown,Western,Post-Pandemic,False
+Portugal,2022,1918,30859319,Europe,Other/Unknown,Western,Post-Pandemic,False
+Portugal,2023,2178,28700418,Europe,Other/Unknown,Western,Post-Pandemic,False
+Portugal,2024,2209,40192274,Europe,Other/Unknown,Western,Post-Pandemic,True
+Puerto Rico,2019,655,5929974,North America,High Income,Western,Pre-Pandemic,False
+Puerto Rico,2020,1338,7209755,North America,High Income,Western,Post-Pandemic,True
+Puerto Rico,2021,1785,9463928,North America,High Income,Western,Post-Pandemic,False
+Puerto Rico,2022,1594,17211758,North America,High Income,Western,Post-Pandemic,False
+Puerto Rico,2023,1817,21018302,North America,High Income,Western,Post-Pandemic,False
+Puerto Rico,2024,1974,31545772,North America,High Income,Western,Post-Pandemic,True
+Romania,2019,17366,121565659,Europe,Upper-Middle Income,Western,Pre-Pandemic,False
+Romania,2020,25108,152115092,Europe,Upper-Middle Income,Western,Post-Pandemic,True
+Romania,2021,31549,301879874,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Romania,2022,28823,349041126,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Romania,2023,31255,552881444,Europe,Upper-Middle Income,Western,Post-Pandemic,False
+Romania,2024,33338,534185027,Europe,Upper-Middle Income,Western,Post-Pandemic,True
+Russia,2019,159459,2404940557,Europe,Upper-Middle Income,Eastern,Pre-Pandemic,False
+Russia,2020,293917,2402832265,Europe,Upper-Middle Income,Eastern,Post-Pandemic,True
+Russia,2021,264533,5932226222,Europe,Upper-Middle Income,Eastern,Post-Pandemic,False
+Russia,2022,296978,7664442141,Europe,Upper-Middle Income,Eastern,Post-Pandemic,False
+Russia,2023,289271,11282113958,Europe,Upper-Middle Income,Eastern,Post-Pandemic,False
+Russia,2024,324091,11161782401,Europe,Upper-Middle Income,Eastern,Post-Pandemic,True
+Saint Kitts and Nevis,2019,261,3016590,North America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Saint Kitts and Nevis,2020,429,5272765,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Saint Kitts and Nevis,2021,576,7953931,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Saint Kitts and Nevis,2022,458,10228299,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Saint Kitts and Nevis,2023,540,9735063,North America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Saint Kitts and Nevis,2024,523,15660694,North America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Saudi Arabia,2019,543,11786077,Asia,High Income,Eastern,Pre-Pandemic,False
+Saudi Arabia,2020,776,14140050,Asia,High Income,Eastern,Post-Pandemic,True
+Saudi Arabia,2021,1115,23930228,Asia,High Income,Eastern,Post-Pandemic,False
+Saudi Arabia,2022,1077,25027493,Asia,High Income,Eastern,Post-Pandemic,False
+Saudi Arabia,2023,1099,43606854,Asia,High Income,Eastern,Post-Pandemic,False
+Saudi Arabia,2024,882,53680633,Asia,High Income,Eastern,Post-Pandemic,True
+Serbia,2019,9268,70529910,Europe,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+Serbia,2020,17344,81490357,Europe,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Serbia,2021,19484,129659345,Europe,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Serbia,2022,15267,200497281,Europe,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Serbia,2023,17658,199276163,Europe,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+Serbia,2024,18312,276403955,Europe,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+Seychelles,2019,27698,326719153,Africa,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Seychelles,2020,47919,410036875,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Seychelles,2021,57050,643725512,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Seychelles,2022,48057,1004081887,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Seychelles,2023,49245,1159638524,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Seychelles,2024,72589,1185940522,Africa,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Singapore,2019,61470,1051420849,Asia,High Income,Eastern,Pre-Pandemic,False
+Singapore,2020,127548,1102776096,Asia,High Income,Eastern,Post-Pandemic,True
+Singapore,2021,139124,1834545540,Asia,High Income,Eastern,Post-Pandemic,False
+Singapore,2022,137210,3813537684,Asia,High Income,Eastern,Post-Pandemic,False
+Singapore,2023,144002,3828469818,Asia,High Income,Eastern,Post-Pandemic,False
+Singapore,2024,161666,4524535787,Asia,High Income,Eastern,Post-Pandemic,True
+Slovakia,2019,1962,18206898,Europe,High Income,Western,Pre-Pandemic,False
+Slovakia,2020,3761,22972759,Europe,High Income,Western,Post-Pandemic,True
+Slovakia,2021,4336,23441713,Europe,High Income,Western,Post-Pandemic,False
+Slovakia,2022,3100,45874291,Europe,High Income,Western,Post-Pandemic,False
+Slovakia,2023,3544,69951666,Europe,High Income,Western,Post-Pandemic,False
+Slovakia,2024,3770,80074928,Europe,High Income,Western,Post-Pandemic,True
+Slovenia,2019,358,7257183,Europe,Other/Unknown,Western,Pre-Pandemic,False
+Slovenia,2020,472,9239424,Europe,Other/Unknown,Western,Post-Pandemic,True
+Slovenia,2021,654,14206301,Europe,Other/Unknown,Western,Post-Pandemic,False
+Slovenia,2022,657,22294080,Europe,Other/Unknown,Western,Post-Pandemic,False
+Slovenia,2023,658,22218114,Europe,Other/Unknown,Western,Post-Pandemic,False
+Slovenia,2024,553,42624356,Europe,Other/Unknown,Western,Post-Pandemic,True
+South Africa,2019,43982,622385234,Africa,Upper-Middle Income,Other/Unknown,Pre-Pandemic,False
+South Africa,2020,89172,867946291,Africa,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+South Africa,2021,79227,1324036298,Africa,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+South Africa,2022,76854,2082730216,Africa,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+South Africa,2023,69950,2521801141,Africa,Upper-Middle Income,Other/Unknown,Post-Pandemic,False
+South Africa,2024,90471,3044360891,Africa,Upper-Middle Income,Other/Unknown,Post-Pandemic,True
+South Korea,2019,15419,297651983,Asia,High Income,Eastern,Pre-Pandemic,False
+South Korea,2020,28400,361302082,Asia,High Income,Eastern,Post-Pandemic,True
+South Korea,2021,36409,572452315,Asia,High Income,Eastern,Post-Pandemic,False
+South Korea,2022,29216,875621156,Asia,High Income,Eastern,Post-Pandemic,False
+South Korea,2023,35254,877591085,Asia,High Income,Eastern,Post-Pandemic,False
+South Korea,2024,29084,939580849,Asia,High Income,Eastern,Post-Pandemic,True
+Spain,2019,31731,334885510,Europe,High Income,Western,Pre-Pandemic,False
+Spain,2020,61452,479903741,Europe,High Income,Western,Post-Pandemic,True
+Spain,2021,76578,692305090,Europe,High Income,Western,Post-Pandemic,False
+Spain,2022,71212,1027272058,Europe,High Income,Western,Post-Pandemic,False
+Spain,2023,69263,1266113273,Europe,High Income,Western,Post-Pandemic,False
+Spain,2024,85721,1244474108,Europe,High Income,Western,Post-Pandemic,True
+Sri Lanka,2019,331,5241631,Asia,Other/Unknown,Eastern,Pre-Pandemic,False
+Sri Lanka,2020,728,7133861,Asia,Other/Unknown,Eastern,Post-Pandemic,True
+Sri Lanka,2021,779,11815830,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Sri Lanka,2022,878,18551545,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Sri Lanka,2023,750,22450558,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Sri Lanka,2024,974,22772342,Asia,Other/Unknown,Eastern,Post-Pandemic,True
+Sweden,2019,43233,288695571,Europe,High Income,Western,Pre-Pandemic,False
+Sweden,2020,61690,330876641,Europe,High Income,Western,Post-Pandemic,True
+Sweden,2021,78842,615839471,Europe,High Income,Western,Post-Pandemic,False
+Sweden,2022,85983,882362917,Europe,High Income,Western,Post-Pandemic,False
+Sweden,2023,81499,876268421,Europe,High Income,Western,Post-Pandemic,False
+Sweden,2024,85663,1267709488,Europe,High Income,Western,Post-Pandemic,True
+Switzerland,2019,13044,102495918,Europe,High Income,Western,Pre-Pandemic,False
+Switzerland,2020,18748,125191128,Europe,High Income,Western,Post-Pandemic,True
+Switzerland,2021,14344,204927558,Europe,High Income,Western,Post-Pandemic,False
+Switzerland,2022,15949,325885360,Europe,High Income,Western,Post-Pandemic,False
+Switzerland,2023,21098,270071586,Europe,High Income,Western,Post-Pandemic,False
+Switzerland,2024,22539,532068262,Europe,High Income,Western,Post-Pandemic,True
+Taiwan,2019,16960,205458284,Asia,High Income,Eastern,Pre-Pandemic,False
+Taiwan,2020,30125,181937259,Asia,High Income,Eastern,Post-Pandemic,True
+Taiwan,2021,23412,403540295,Asia,High Income,Eastern,Post-Pandemic,False
+Taiwan,2022,29178,597702921,Asia,High Income,Eastern,Post-Pandemic,False
+Taiwan,2023,29158,866022568,Asia,High Income,Eastern,Post-Pandemic,False
+Taiwan,2024,28801,843230608,Asia,High Income,Eastern,Post-Pandemic,True
+Tanzania,2019,3052,14935783,Africa,Low Income,Other/Unknown,Pre-Pandemic,False
+Tanzania,2020,4171,21277746,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Tanzania,2021,4917,23961290,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Tanzania,2022,4362,66303435,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Tanzania,2023,6044,60317924,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Tanzania,2024,5223,56671764,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Thailand,2019,13088,122082224,Asia,Upper-Middle Income,Eastern,Pre-Pandemic,False
+Thailand,2020,24580,147126154,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Thailand,2021,28961,247890207,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Thailand,2022,33569,298227985,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Thailand,2023,28129,425375149,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Thailand,2024,31341,534867939,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Turkey,2019,16525,208240641,Asia,Upper-Middle Income,Eastern,Pre-Pandemic,False
+Turkey,2020,28232,259185589,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+Turkey,2021,30367,392571792,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Turkey,2022,34165,626586973,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Turkey,2023,32269,761641603,Asia,Upper-Middle Income,Eastern,Post-Pandemic,False
+Turkey,2024,37909,901844914,Asia,Upper-Middle Income,Eastern,Post-Pandemic,True
+UK,2019,182883,1342411802,Europe,High Income,Western,Pre-Pandemic,False
+UK,2020,427367,1590816673,Europe,High Income,Western,Post-Pandemic,True
+UK,2021,357679,2740678986,Europe,High Income,Western,Post-Pandemic,False
+UK,2022,338939,5037818889,Europe,High Income,Western,Post-Pandemic,False
+UK,2023,378554,3906023589,Europe,High Income,Western,Post-Pandemic,False
+UK,2024,481671,6379113995,Europe,High Income,Western,Post-Pandemic,True
+USA,2019,428355,3302744547,North America,High Income,Western,Pre-Pandemic,False
+USA,2020,796395,3906715208,North America,High Income,Western,Post-Pandemic,True
+USA,2021,829571,6466618579,North America,High Income,Western,Post-Pandemic,False
+USA,2022,769205,10304392551,North America,High Income,Western,Post-Pandemic,False
+USA,2023,876894,11916782073,North America,High Income,Western,Post-Pandemic,False
+USA,2024,946966,14457011740,North America,High Income,Western,Post-Pandemic,True
+Uganda,2019,482,3896487,Africa,Low Income,Other/Unknown,Pre-Pandemic,False
+Uganda,2020,1164,4550806,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Uganda,2021,1058,6096969,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Uganda,2022,987,10859684,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Uganda,2023,1300,17084728,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Uganda,2024,1188,15809008,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Ukraine,2019,65629,1290652585,Europe,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Ukraine,2020,102244,1449674414,Europe,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Ukraine,2021,110254,2590458387,Europe,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Ukraine,2022,111410,3585569523,Europe,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Ukraine,2023,117532,4171982394,Europe,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Ukraine,2024,160414,5161336915,Europe,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+United Arab Emirates,2019,5503,48101706,Asia,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+United Arab Emirates,2020,7390,81178182,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+United Arab Emirates,2021,10164,131934602,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+United Arab Emirates,2022,10042,187062157,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+United Arab Emirates,2023,11034,244238485,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,False
+United Arab Emirates,2024,12071,280815215,Asia,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Uzbekistan,2019,731,10115233,Asia,Lower-Middle Income,Other/Unknown,Pre-Pandemic,False
+Uzbekistan,2020,1305,11920427,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Uzbekistan,2021,1459,21396751,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Uzbekistan,2022,1487,30686669,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Uzbekistan,2023,1414,31812459,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,False
+Uzbekistan,2024,2014,52122352,Asia,Lower-Middle Income,Other/Unknown,Post-Pandemic,True
+Venezuela,2019,7541,79397063,South America,Other/Unknown,Other/Unknown,Pre-Pandemic,False
+Venezuela,2020,11980,113825151,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Venezuela,2021,16529,168584712,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Venezuela,2022,17147,178891015,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Venezuela,2023,11897,306878450,South America,Other/Unknown,Other/Unknown,Post-Pandemic,False
+Venezuela,2024,20795,361746565,South America,Other/Unknown,Other/Unknown,Post-Pandemic,True
+Vietnam,2019,21505,381138510,Asia,Lower-Middle Income,Eastern,Pre-Pandemic,False
+Vietnam,2020,53039,388987922,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Vietnam,2021,40567,624738922,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Vietnam,2022,36128,971673882,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Vietnam,2023,51411,1166933394,Asia,Lower-Middle Income,Eastern,Post-Pandemic,False
+Vietnam,2024,50706,1427085868,Asia,Lower-Middle Income,Eastern,Post-Pandemic,True
+Yemen,2019,216,2714177,Asia,Low Income,Other/Unknown,Pre-Pandemic,False
+Yemen,2020,362,2673181,Asia,Low Income,Other/Unknown,Post-Pandemic,True
+Yemen,2021,391,6237592,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Yemen,2022,482,9797841,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Yemen,2023,400,9470640,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Yemen,2024,330,9792860,Asia,Low Income,Other/Unknown,Post-Pandemic,True
+Zimbabwe,2019,499,2509401,Africa,Low Income,Other/Unknown,Pre-Pandemic,False
+Zimbabwe,2020,722,5065509,Africa,Low Income,Other/Unknown,Post-Pandemic,True
+Zimbabwe,2021,775,6764235,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Zimbabwe,2022,729,10101328,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Zimbabwe,2023,688,9698258,Africa,Low Income,Other/Unknown,Post-Pandemic,False
+Zimbabwe,2024,744,14344326,Africa,Low Income,Other/Unknown,Post-Pandemic,True
