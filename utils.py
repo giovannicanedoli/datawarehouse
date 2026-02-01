@@ -472,7 +472,8 @@ def categorize_continent(val):
             'Nepal', 'Maldives', 'Kazakhstan', 'Uzbekistan', 'Kyrgyzstan', 
             'Georgia', 'Armenia', 'Azerbaijan', 'Israel', 'Palestine', 'Jordan', 
             'Lebanon', 'Iraq', 'Saudi Arabia', 'United Arab Emirates', 'Oman', 
-            'Bahrain', 'Yemen', 'Iran', 'Turkey', 'Cambodia', 'Syria'
+            'Bahrain', 'Yemen', 'Iran', 'Turkey', 'Cambodia', 'Syria', 
+            'Mongolia', 'Afghanistan'
         },
         "Africa": {
             'South Africa', 'Nigeria', 'Kenya', 'Egypt', 'Ghana', 'Tanzania', 
@@ -484,7 +485,6 @@ def categorize_continent(val):
         }
     }
 
-    # Direct match check
     for continent, country_list in continents.items():
         if val_clean in country_list:
             return continent
@@ -497,7 +497,6 @@ def categorize_nation_by_welfare(val):
     
     val_clean = str(val).strip()
     
-    # Define Welfare Sets (Based on World Bank Income Groups)
     welfare_groups = {
         "High Income": {
             'USA', 'United States', 'UK', 'United Kingdom', 'Germany', 'France', 'Japan', 
@@ -523,7 +522,6 @@ def categorize_nation_by_welfare(val):
         }
     }
 
-    # Direct match check
     for group, countries in welfare_groups.items():
         if val_clean in countries:
             return group
@@ -554,7 +552,6 @@ def categorize_west_or_est_country(val):
         }
     }
 
-    # Direct match check
     for group, countries in alignment_groups.items():
         if val_clean in countries:
             return group

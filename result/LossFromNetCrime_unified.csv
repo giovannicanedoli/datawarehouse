@@ -1,10 +1,10 @@
 Country,Year,Complaints,Losses,Continent,Nation_Wealth,West_or_East,Pandemic_Era,Is_Leap_Year
-Afghanistan,2019,612,9218912,Other,Low Income,Other/Unknown,Pre-Pandemic,False
-Afghanistan,2020,1095,8257595,Other,Low Income,Other/Unknown,Post-Pandemic,True
-Afghanistan,2021,1226,17334907,Other,Low Income,Other/Unknown,Post-Pandemic,False
-Afghanistan,2022,982,36751138,Other,Low Income,Other/Unknown,Post-Pandemic,False
-Afghanistan,2023,1150,38527355,Other,Low Income,Other/Unknown,Post-Pandemic,False
-Afghanistan,2024,1373,37684396,Other,Low Income,Other/Unknown,Post-Pandemic,True
+Afghanistan,2019,612,9218912,Asia,Low Income,Other/Unknown,Pre-Pandemic,False
+Afghanistan,2020,1095,8257595,Asia,Low Income,Other/Unknown,Post-Pandemic,True
+Afghanistan,2021,1226,17334907,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2022,982,36751138,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2023,1150,38527355,Asia,Low Income,Other/Unknown,Post-Pandemic,False
+Afghanistan,2024,1373,37684396,Asia,Low Income,Other/Unknown,Post-Pandemic,True
 Albania,2019,1261,15433066,Europe,Other/Unknown,Other/Unknown,Pre-Pandemic,False
 Albania,2020,2450,15481216,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
 Albania,2021,2114,25528929,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
@@ -401,12 +401,12 @@ Moldova,2021,9518,54354359,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,Fals
 Moldova,2022,5551,100461762,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
 Moldova,2023,7045,89668934,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,False
 Moldova,2024,9086,118929790,Europe,Other/Unknown,Other/Unknown,Post-Pandemic,True
-Mongolia,2019,1064,26326159,Other,Other/Unknown,Eastern,Pre-Pandemic,False
-Mongolia,2020,1937,32473442,Other,Other/Unknown,Eastern,Post-Pandemic,True
-Mongolia,2021,1514,52528265,Other,Other/Unknown,Eastern,Post-Pandemic,False
-Mongolia,2022,2321,98551738,Other,Other/Unknown,Eastern,Post-Pandemic,False
-Mongolia,2023,1999,93152308,Other,Other/Unknown,Eastern,Post-Pandemic,False
-Mongolia,2024,2253,123314277,Other,Other/Unknown,Eastern,Post-Pandemic,True
+Mongolia,2019,1064,26326159,Asia,Other/Unknown,Eastern,Pre-Pandemic,False
+Mongolia,2020,1937,32473442,Asia,Other/Unknown,Eastern,Post-Pandemic,True
+Mongolia,2021,1514,52528265,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2022,2321,98551738,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2023,1999,93152308,Asia,Other/Unknown,Eastern,Post-Pandemic,False
+Mongolia,2024,2253,123314277,Asia,Other/Unknown,Eastern,Post-Pandemic,True
 Mozambique,2019,1773,14590391,Africa,Low Income,Other/Unknown,Pre-Pandemic,False
 Mozambique,2020,3510,16760987,Africa,Low Income,Other/Unknown,Post-Pandemic,True
 Mozambique,2021,3203,29921649,Africa,Low Income,Other/Unknown,Post-Pandemic,False

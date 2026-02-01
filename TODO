@@ -2,7 +2,7 @@
 [x] cambiare questa insert into INSERT INTO entity_dimension (entity_name, industry, org_type, stolen_records) VALUES ('Unknown', 'Unknown', 'Unknown', 'Unknown') ON CONFLICT DO NOTHING;
 [x] add lossess and constraint
 [x] add leap year
-[ ] add a few queries: rebuild a cube and so on
+[x] add a few queries: rebuild a cube and so on
 [ ] add complexity of the hierarchies
 [ ] add ER of the reconcield layer
 [ ] is there any pgadmin tool to do the ER of the reconcield layer?
