@@ -91,23 +91,61 @@ CREATE TABLE IF NOT EXISTS entity_dimension (
 );
 
 -- Create Fact Table
-CREATE TABLE IF NOT EXISTS cyber_security_attack (
+-- CREATE TABLE IF NOT EXISTS cyber_security_attack (
+--     geo_id INT NOT NULL,
+--     attack_id INT NOT NULL,
+--     defense_id INT NOT NULL,
+--     entity_id INT NOT NULL,
+--     time_id INT NOT NULL,
+--     complaints BIGINT,
+--     losses BIGINT,
+--     affected_users BIGINT,
+--     records_lost BIGINT,
+--     resolution_time_hours INT,
+--     PRIMARY KEY (geo_id, attack_id, time_id, defense_id, entity_id),
+--     FOREIGN KEY (geo_id) REFERENCES geography_dimension(geo_id),
+--     FOREIGN KEY (attack_id) REFERENCES attack_dimension(attack_id),
+--     FOREIGN KEY (defense_id) REFERENCES defense_dimension(defense_id),
+--     FOREIGN KEY (entity_id) REFERENCES entity_dimension(entity_id),
+--     FOREIGN KEY (time_id) REFERENCES time_dimension(time_id)
+-- );
+
+CREATE TABLE IF NOT EXISTS fact_net_crime_stats (
     geo_id INT NOT NULL,
+    time_id INT NOT NULL,
+
+    -- Metrics (Facts)
+    total_complaints BIGINT,
+    total_financial_losses BIGINT,
+
+    -- Constraints
+    PRIMARY KEY (geo_id, time_id),
+    FOREIGN KEY (geo_id) REFERENCES geography_dimension(geo_id),
+    FOREIGN KEY (time_id) REFERENCES time_dimension(time_id)
+);
+
+CREATE TABLE IF NOT EXISTS fact_cyber_incidents (    
+
+    -- Dimension Foreign Keys
+    geo_id INT NOT NULL,
+    time_id INT NOT NULL,
     attack_id INT NOT NULL,
     defense_id INT NOT NULL,
-    entity_id INT NOT NULL,
-    time_id INT NOT NULL,
-    complaints BIGINT,
-    losses BIGINT,
+    entity_id INT NOT NULL, -- "Unknown" if coming from global_threats
+
+    -- Metrics (Facts)
     affected_users BIGINT,
     records_lost BIGINT,
     resolution_time_hours INT,
-    PRIMARY KEY (geo_id, attack_id, time_id, defense_id, entity_id),
+    
+
+    -- Constraints
+    PRIMARY KEY (geo_id, time_id, attack_id, defense_id, entity_id),
     FOREIGN KEY (geo_id) REFERENCES geography_dimension(geo_id),
+    FOREIGN KEY (time_id) REFERENCES time_dimension(time_id),
     FOREIGN KEY (attack_id) REFERENCES attack_dimension(attack_id),
     FOREIGN KEY (defense_id) REFERENCES defense_dimension(defense_id),
-    FOREIGN KEY (entity_id) REFERENCES entity_dimension(entity_id),
-    FOREIGN KEY (time_id) REFERENCES time_dimension(time_id)
+    FOREIGN KEY (entity_id) REFERENCES entity_dimension(entity_id)
 );
 
 -- 5. Insert Dimensions
@@ -152,92 +190,161 @@ INSERT INTO entity_dimension (entity_name, industry, org_type, stolen_records)
 VALUES ('Unknown', 'Unknown', 'Unknown', 0);
 
 
-INSERT INTO cyber_security_attack (
-    geo_id, attack_id, defense_id, entity_id, time_id, 
-    complaints, losses, affected_users, resolution_time_hours, records_lost
+-- 1. Load Global Threats
+-- INSERT INTO fact_cyber_incidents (
+--     geo_id, time_id, attack_id, defense_id, entity_id, 
+--     affected_users, resolution_time_hours, records_lost
+-- )
+-- SELECT 
+--     geo_id, 
+--     time_id, 
+--     attack_id, 
+--     defense_id, 
+--     entity_id,
+--     -- SUM(affected_users) as affected_users,
+--     -- ROUND(AVG(resolution_time_hours))::int as resolution_time_hours,
+--     -- SUM(records_lost) as records_lost
+--     affected_users,
+--     resolution_time_hours,
+--     records_lost
+-- FROM (
+
+--     SELECT DISTINCT ON (g.geo_id, t.time_id, a.attack_id, d.defense_id)
+--         g.geo_id,
+--         t.time_id,
+--         a.attack_id,
+--         d.defense_id,
+--     COALESCE(
+--             e.entity_id, 
+--             (SELECT entity_id FROM entity_dimension WHERE entity_name = 'Unknown' LIMIT 1)
+--         ) as entity_id,        
+--         s.affected_users,
+--         s.resolution_time_hours,
+--         b.records as records_lost
+--     FROM staging_global_threats s
+--     JOIN geography_dimension g ON s.country = g.country
+--     JOIN time_dimension t      ON s.year = t.year
+
+--     JOIN (
+--         SELECT DISTINCT ON (attack_type) attack_id, attack_type 
+--         FROM attack_dimension
+--     ) a ON s.attack_type = a.attack_type
+
+--     JOIN (
+--         SELECT DISTINCT ON (defense_mechanism) defense_id, defense_mechanism 
+--         FROM defense_dimension
+--     ) d ON s.defense_mechanism = d.defense_mechanism
+
+--     LEFT JOIN staging_breaches b ON s.country = b.country AND s.year = b.year AND s.unified_attack_category = b.unified_attack_category AND s.unified_industry = b.unified_industry
+--     LEFT JOIN entity_dimension e ON b.entity = e.entity_name
+
+--     UNION
+--     --tutte le tuple che sono in staging_global_threats ma che non sono in staging_breaches
+    
+
+--     ) as combined_source;
+
+
+INSERT INTO fact_cyber_incidents (
+    geo_id, time_id, attack_id, defense_id, entity_id, 
+    affected_users, resolution_time_hours, records_lost
 )
-SELECT 
-    geo_id, 
-    attack_id, 
-    defense_id, 
-    entity_id, 
-    time_id,
-    SUM(complaints) as complaints,
-    SUM(losses) as losses,
-    SUM(affected_users) as affected_users,
-    ROUND(AVG(resolution_time_hours))::int as resolution_time_hours,
-    SUM(records_lost) as records_lost
-FROM (
+SELECT DISTINCT ON (geo_id, time_id, attack_id, defense_id, entity_id)
+    g.geo_id,
+    t.time_id,
+    
+    -- LOGICA ATTACK ID:
+    -- 1. Se c'è la minaccia (s), usa il suo tipo specifico.
+    -- 2. Se è solo breach (b), usa la categoria unificata per trovare un ID.
+    -- 3. Altrimenti Unknown.
+    COALESCE(
+        a_specific.attack_id, 
+        a_category.attack_id, 
+        (SELECT attack_id FROM attack_dimension WHERE attack_type = 'Unknown' LIMIT 1)
+    ) as attack_id,
 
-    SELECT 
-        g.geo_id, 
-        distinct_attacks.attack_id,
-        distinct_defenses.defense_id, 
-        (SELECT entity_id FROM entity_dimension WHERE entity_name = 'Unknown' LIMIT 1) as entity_id,
-        t.time_id,
-        NULL::bigint as complaints,
-        NULL::bigint as losses,
-        s.affected_users::bigint as affected_users,
-        s.resolution_time_hours::int as resolution_time_hours,
-        NULL::bigint as records_lost
-    FROM staging_global_threats s
-    JOIN geography_dimension g ON s.country = g.country 
-    -- JOIN breaches 
-    -- JOIN netcrime
-    JOIN time_dimension t      ON s.year = t.year
-    JOIN (SELECT DISTINCT ON (a.attack_type) a.attack_id, a.attack_type FROM attack_dimension a)
-     distinct_attacks ON s.attack_type = distinct_attacks.attack_type
-    JOIN (SELECT DISTINCT ON (d.defense_mechanism) d.defense_id, d.defense_mechanism FROM defense_dimension d) 
-    distinct_defenses ON s.defense_mechanism = distinct_defenses.defense_mechanism
+    -- LOGICA DEFENSE ID: Presente solo in 's', altrimenti Unknown
+    COALESCE(
+        d.defense_id, 
+        (SELECT defense_id FROM defense_dimension WHERE defense_mechanism = 'Unknown' LIMIT 1)
+    ) as defense_id,
 
+    -- LOGICA ENTITY ID: Presente solo in 'b', altrimenti Unknown
+    COALESCE(
+        e.entity_id, 
+        (SELECT entity_id FROM entity_dimension WHERE entity_name = 'Unknown' LIMIT 1)
+    ) as entity_id,
 
-    UNION
+    -- METRICHE
+    s.affected_users,           -- Sarà NULL se la riga viene solo da Breaches
+    s.resolution_time_hours,    -- Sarà NULL se la riga viene solo da Breaches
+    b.records as records_lost   -- Sarà NULL se la riga viene solo da Threats
 
-    -- Data from Net Crime
-    SELECT 
-        g.geo_id,
-        (SELECT attack_id FROM attack_dimension WHERE attack_type = 'Unknown' LIMIT 1) as attack_id,
-        (SELECT defense_id FROM defense_dimension WHERE defense_mechanism = 'Unknown' LIMIT 1) as defense_id,
-        (SELECT entity_id FROM entity_dimension WHERE entity_name = 'Unknown' LIMIT 1) as entity_id,
-        t.time_id,
-        n.complaints,
-        n.losses,
-        NULL::bigint,
-        NULL::int,
-        NULL::bigint
-    FROM staging_net_crime n
-    JOIN geography_dimension g ON n.country = g.country 
-    JOIN time_dimension t      ON n.year = t.year
-    -- netcrime where year is not in attack
-    UNION
+FROM staging_global_threats s
 
-    -- Data from Breaches
-    SELECT 
-        g.geo_id,
-        COALESCE(distinct_attacks.attack_id, (SELECT attack_id FROM attack_dimension WHERE attack_type = 'Unknown' LIMIT 1)) as attack_id,
-        (SELECT defense_id FROM defense_dimension WHERE defense_mechanism = 'Unknown' LIMIT 1) as defense_id,
-        e.entity_id,
-        t.time_id,
-        NULL::bigint,
-        NULL::bigint,
-        NULL::bigint,
-        NULL::int,
-        b.records
-    FROM staging_breaches b
-    JOIN geography_dimension g ON b.country = g.country 
-    JOIN time_dimension t      ON b.year = t.year
-    JOIN entity_dimension e    ON b.entity = e.entity_name
-    LEFT JOIN (SELECT distinct on (a.attack_type) a.attack_id, a.attack_type, a.unified_category
-     FROM attack_dimension a) distinct_attacks ON b.unified_attack_category = distinct_attacks.unified_category
-    -- where year is not attack
-) as combined_data
+-- *** IL CUORE DELLA MODIFICA: FULL OUTER JOIN ***
+FULL OUTER JOIN staging_breaches b 
+    ON s.country = b.country 
+    AND s.year = b.year 
+    AND s.unified_attack_category = b.unified_attack_category 
+    AND s.unified_industry = b.unified_industry
 
-GROUP BY geo_id, attack_id, defense_id, entity_id, time_id;
+-- *** JOIN CON LE DIMENSIONI (GEO e TIME) ***
+-- Usiamo COALESCE perché s.country è NULL se la riga viene solo da 'b', e viceversa
+JOIN geography_dimension g ON g.country = COALESCE(s.country, b.country)
+JOIN time_dimension t      ON t.year    = COALESCE(s.year, b.year)
+
+-- *** LOOKUP DIMENSIONI SPECIFICHE ***
+
+-- 1. Recupero ID Attacco specifico (da Threats)
+LEFT JOIN (
+    SELECT DISTINCT ON (attack_type) attack_id, attack_type 
+    FROM attack_dimension
+) a_specific ON s.attack_type = a_specific.attack_type
+
+-- 2. Recupero ID Attacco generico (da Breaches - fallback)
+LEFT JOIN (
+    SELECT DISTINCT ON (unified_category) attack_id, unified_category 
+    FROM attack_dimension
+) a_category ON b.unified_attack_category = a_category.unified_category
+
+-- 3. Recupero Difesa (solo da Threats)
+LEFT JOIN (
+    SELECT DISTINCT ON (defense_mechanism) defense_id, defense_mechanism 
+    FROM defense_dimension
+) d ON s.defense_mechanism = d.defense_mechanism
+
+-- 4. Recupero Entity (solo da Breaches)
+LEFT JOIN entity_dimension e ON b.entity = e.entity_name
+
+-- *** GESTIONE CONFLITTI ***
+ON CONFLICT (geo_id, time_id, attack_id, defense_id, entity_id) 
+DO UPDATE SET
+    records_lost = COALESCE(EXCLUDED.records_lost, fact_cyber_incidents.records_lost),
+    affected_users = COALESCE(EXCLUDED.affected_users, fact_cyber_incidents.affected_users),
+    resolution_time_hours = COALESCE(EXCLUDED.resolution_time_hours, fact_cyber_incidents.resolution_time_hours);
 
 
 
 DO $$
 BEGIN
     RAISE NOTICE 'Fact table insert completed at % ✓', NOW();
-    RAISE NOTICE 'Total rows in cyber_security_attack: % ✓', (SELECT COUNT(*) FROM cyber_security_attack);
+    RAISE NOTICE 'Total rows in cyber_security_attack: % ✓', (SELECT COUNT(*) FROM fact_cyber_incidents);
+END $$;
+
+
+INSERT INTO fact_net_crime_stats (geo_id, time_id, total_complaints, total_financial_losses)
+SELECT 
+    g.geo_id,
+    t.time_id,
+    n.complaints,
+    n.losses
+FROM staging_net_crime n
+JOIN geography_dimension g ON n.country = g.country
+JOIN time_dimension t ON n.year = t.year;
+
+DO $$
+BEGIN
+    RAISE NOTICE 'Fact table insert completed at % ✓', NOW();
+    RAISE NOTICE 'Total rows in cyber_security_attack: % ✓', (SELECT COUNT(*) FROM fact_net_crime_stats);
 END $$;
