@@ -182,16 +182,16 @@ FROM (
         NULL::bigint as records_lost
     FROM staging_global_threats s
     JOIN geography_dimension g ON s.country = g.country 
+    -- JOIN breaches 
+    -- JOIN netcrime
     JOIN time_dimension t      ON s.year = t.year
-    --JOIN attack_dimension a    ON s.attack_type = a.attack_type
-    --JOIN defense_dimension d   ON s.defense_mechanism = d.defense_mechanism
     JOIN (SELECT DISTINCT ON (a.attack_type) a.attack_id, a.attack_type FROM attack_dimension a)
      distinct_attacks ON s.attack_type = distinct_attacks.attack_type
     JOIN (SELECT DISTINCT ON (d.defense_mechanism) d.defense_id, d.defense_mechanism FROM defense_dimension d) 
     distinct_defenses ON s.defense_mechanism = distinct_defenses.defense_mechanism
 
 
-    UNION ALL
+    UNION
 
     -- Data from Net Crime
     SELECT 
@@ -208,8 +208,8 @@ FROM (
     FROM staging_net_crime n
     JOIN geography_dimension g ON n.country = g.country 
     JOIN time_dimension t      ON n.year = t.year
-
-    UNION ALL
+    -- netcrime where year is not in attack
+    UNION
 
     -- Data from Breaches
     SELECT 
@@ -227,10 +227,9 @@ FROM (
     JOIN geography_dimension g ON b.country = g.country 
     JOIN time_dimension t      ON b.year = t.year
     JOIN entity_dimension e    ON b.entity = e.entity_name
-    --LEFT JOIN attack_dimension a ON b.unified_attack_category = a.unified_category
     LEFT JOIN (SELECT distinct on (a.attack_type) a.attack_id, a.attack_type, a.unified_category
      FROM attack_dimension a) distinct_attacks ON b.unified_attack_category = distinct_attacks.unified_category
-
+    -- where year is not attack
 ) as combined_data
 
 GROUP BY geo_id, attack_id, defense_id, entity_id, time_id;

@@ -1,3 +1,41 @@
+SELECT  distinct
+    g.country, 
+    a.attack_type, 
+    d.defense_mechanism, 
+    e.entity_name as entity, 
+    t.year ,
+	SUM(cs.losses) as total_losses,
+    SUM(cs.complaints) as total_complaints
+FROM cyber_security_attack fact
+JOIN geography_dimension g ON fact.geo_id = g.geo_id
+JOIN attack_dimension    a ON fact.attack_id = a.attack_id
+JOIN defense_dimension   d ON fact.defense_id = d.defense_id
+JOIN entity_dimension    e ON fact.entity_id = e.entity_id
+JOIN time_dimension       t ON fact.time_id = t.time_id
+GROUP BY g.country; 
+
+SELECT
+    g.country, 
+    a.attack_type, 
+    d.defense_mechanism, 
+    e.entity_name as entity, 
+    t.year ,
+	SUM(fact.losses) as total_losses,
+    SUM(fact.complaints) as total_complaints
+FROM cyber_security_attack fact
+JOIN geography_dimension g ON fact.geo_id = g.geo_id
+JOIN attack_dimension    a ON fact.attack_id = a.attack_id
+JOIN defense_dimension   d ON fact.defense_id = d.defense_id
+JOIN entity_dimension    e ON fact.entity_id = e.entity_id
+JOIN time_dimension       t ON fact.time_id = t.time_id
+WHERE fact.losses is not null and fact.complaints is not null
+GROUP BY g.country, a.attack_type, 
+    d.defense_mechanism, 
+	d.defense_mechanism, 
+    e.entity_name ,t.year
+ORDER BY t.year;
+
+
 --ROLL UP QUERY: aggregating losses and complaints of a country over all years
 SELECT g.country, SUM(cs.losses) as total_losses, SUM(cs.complaints) as total_complaints
 FROM cyber_security_attack cs
