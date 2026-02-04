@@ -1,4 +1,17 @@
+version: '3.8'
 services:
+  python_etl_executor:
+    build:
+      context: .
+      dockerfile: Dockerfile.python_etl_executor
+    image: datawarehouse-python_etl_executor:latest
+    volumes:
+      - ./:/app
+      - ./result:/app/result
+    working_dir: /app
+    command: ["python", "main.py"]
+    restart: "no"
+
   db:
     image: postgres:16
     restart: always
@@ -12,6 +25,20 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./load_data.sql:/docker-entrypoint-initdb.d/load_data.sql
       - ./result:/data
+    depends_on:
+      - python_etl_executor
+    entrypoint: 
+      - "/bin/sh"
+      - "-c"
+      - |
+        until [ -f /data/organization_data_breaches_unified.csv ] && \
+              [ -f /data/Global_Cybersecurity_Threats_unified.csv ] && \
+              [ -f /data/LossFromNetCrime_unified.csv ]; 
+        do 
+          echo 'Waiting for result files...'; 
+          sleep 2; 
+        done; 
+        exec docker-entrypoint.sh postgres
 
   pgadmin:
     image: dpage/pgadmin4
@@ -25,7 +52,6 @@ services:
     depends_on:
       - db
     restart: always
-
 
 volumes:
   postgres_data:
