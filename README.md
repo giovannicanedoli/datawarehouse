@@ -1,7 +1,6 @@
 # Data Warehouse Project: Cybersecurity Incidents and Financial Impact
 **A Star Schema implementation for analyzing global threats and economic losses.**
 
-> **Academic Track:** Data Management  
 > **Author:** Giovanni Canedoli, Sapienza University of Rome
 
 ---
@@ -40,7 +39,17 @@ sudo docker compose up
 
 #### 3. Access and Analysis
 * **Interface**: Once the containers are running, navigate to [http://localhost:5050](http://localhost:5050) to access the pgAdmin 4 management interface.
-* **Database**: The ETL process automatically populates the PostgreSQL instance with the Star Schema.
+* **Database Connection**: To connect pgAdmin to your database, right-click **"Servers" > "Register" > "Server..."**. Under the **"Connection"** tab, enter the following credentials:
+
+| Field | Value |
+| :--- | :--- |
+| **Host name/address** | `db` |
+| **Port** | `5432` |
+| **Maintenance database** | `datawarehouse` |
+| **Username** | `postgres` |
+| **Password** | `postgres` |
+
+> **Note**: You must use `db` as the host name because pgAdmin is communicating with the database over the internal Docker network.
 * **Analytical Queries**: A collection of ROLAP queries (aggregations, drill-downs, and trend analysis) is available in `queries.sql`.
 
 ---

@@ -1,144 +1,90 @@
-SELECT  distinct
-    g.country, 
-    a.attack_type, 
-    d.defense_mechanism, 
-    e.entity_name as entity, 
-    t.year ,
-	SUM(cs.losses) as total_losses,
-    SUM(cs.complaints) as total_complaints
-FROM cyber_security_attack fact
-JOIN geography_dimension g ON fact.geo_id = g.geo_id
-JOIN attack_dimension    a ON fact.attack_id = a.attack_id
-JOIN defense_dimension   d ON fact.defense_id = d.defense_id
-JOIN entity_dimension    e ON fact.entity_id = e.entity_id
-JOIN time_dimension       t ON fact.time_id = t.time_id
-GROUP BY g.country; 
+-- 1 ROLL UP
+
+SELECT g.continent,
+t.year, 
+SUM(f.affected_users) as total_affected_users
+FROM fact_cyber_incidents f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN time_dimension t ON f.time_id = t.time_id
+GROUP BY g.continent, t.year
+ORDER BY g.continent, t.year;
+
+
+-- 2 DRILL DOWN
 
 SELECT
-    g.country, 
-    a.attack_type, 
-    d.defense_mechanism, 
-    e.entity_name as entity, 
-    t.year ,
-	SUM(fact.losses) as total_losses,
-    SUM(fact.complaints) as total_complaints
-FROM cyber_security_attack fact
-JOIN geography_dimension g ON fact.geo_id = g.geo_id
-JOIN attack_dimension    a ON fact.attack_id = a.attack_id
-JOIN defense_dimension   d ON fact.defense_id = d.defense_id
-JOIN entity_dimension    e ON fact.entity_id = e.entity_id
-JOIN time_dimension       t ON fact.time_id = t.time_id
-WHERE fact.losses is not null and fact.complaints is not null
-GROUP BY g.country, a.attack_type, 
-    d.defense_mechanism, 
-	d.defense_mechanism, 
-    e.entity_name ,t.year
-ORDER BY t.year;
+   g.country,
+   a.unified_category,
+   a.attack_type,
+   SUM(f.records_lost) as total_records_lost
+FROM fact_cyber_incidents f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN attack_dimension a ON f.attack_id = a.attack_id
+WHERE g.continent = 'Europe'
+GROUP BY g.country, a.unified_category, a.attack_type
+ORDER BY total_records_lost DESC;
 
 
---ROLL UP QUERY: aggregating losses and complaints of a country over all years
-SELECT g.country, SUM(cs.losses) as total_losses, SUM(cs.complaints) as total_complaints
-FROM cyber_security_attack cs
-JOIN geography_dimension g ON cs.geo_id = g.geo_id
-GROUP BY g.country; 
+-- 3 DRILL ACROSS
 
-WITH RegionalStats AS (
-    -- Primo livello: Aggreghiamo i dati per Continente, Nazione e Anno
-    SELECT 
-        g.continent,
-        g.country,
-        t.year,
-        SUM(cs.losses) as yearly_losses,
-        SUM(SUM(cs.losses)) OVER (PARTITION BY g.country ORDER BY t.year) as cumulative_country_losses
-    FROM cyber_security_attack cs
-    JOIN geography_dimension g ON cs.geo_id = g.geo_id
-    JOIN time_dimension t ON cs.time_id = t.time_id
-    GROUP BY g.continent, g.country, t.year
+WITH incident_metrics AS (
+   SELECT
+       time_id,
+       SUM(records_lost) as total_records_lost
+   FROM fact_cyber_incidents
+   GROUP BY time_id
 ),
-ContinentTotals AS (
-    -- Secondo livello: Calcoliamo il totale per continente usando una Window Function
-    SELECT 
-        *,
-        SUM(yearly_losses) OVER (PARTITION BY continent) as total_continent_losses,
-        RANK() OVER (PARTITION BY continent ORDER BY yearly_losses DESC) as country_rank_in_continent
-    FROM RegionalStats
+crime_stats_metrics AS (
+   SELECT
+       time_id,
+       SUM(total_financial_losses) as total_financial_losses
+   FROM fact_net_crime_stats
+   GROUP BY time_id
 )
--- Risultato finale: Analisi comparativa
-SELECT 
-    continent,
-    country,
-    year,
-    yearly_losses,
-    cumulative_country_losses,
-    ROUND((yearly_losses::numeric / NULLIF(total_continent_losses, 0)) * 100, 2) as percent_impact_on_continent
-FROM ContinentTotals
-WHERE country_rank_in_continent <= 5 -- Filtriamo solo le prime 5 nazioni per continente
-ORDER BY continent, yearly_losses DESC;
-
-
--- DRILL-DOWN: Analisi della perdita record per Continente -> Industria -> Metodo di Attacco
-SELECT 
-    g.continent,
-    e.industry,
-    a.attack_type,
-    SUM(cs.records_lost) as total_records_lost,
-    COUNT(*) as number_of_incidents
-FROM cyber_security_attack cs
-JOIN geography_dimension g ON cs.geo_id = g.geo_id
-JOIN entity_dimension e ON cs.entity_id = e.entity_id
-JOIN attack_dimension a ON cs.attack_id = a.attack_id
-WHERE cs.records_lost IS NOT NULL
-GROUP BY g.continent, e.industry, a.attack_type
-ORDER BY g.continent, total_records_lost DESC;
-
-
-
--- PIVOTING: Totale perdite economiche per Anno (Righe) e Continente (Colonne)
-SELECT 
-    t.year,
-    SUM(cs.losses) FILTER (WHERE g.continent = 'Europe') as losses_europe,
-    SUM(cs.losses) FILTER (WHERE g.continent = 'North America') as losses_north_america,
-    SUM(cs.losses) FILTER (WHERE g.continent = 'Asia') as losses_asia,
-    SUM(cs.losses) as global_total
-FROM cyber_security_attack cs
-JOIN time_dimension t ON cs.time_id = t.time_id
-JOIN geography_dimension g ON cs.geo_id = g.geo_id
-GROUP BY t.year
+SELECT
+   t.year,
+   im.total_records_lost,
+   cs.total_financial_losses
+FROM time_dimension t
+LEFT JOIN incident_metrics im ON t.time_id = im.time_id
+LEFT JOIN crime_stats_metrics cs ON t.time_id = cs.time_id
 ORDER BY t.year;
 
 
--- SLICE AND DICE: Analisi mirata su "Healthcare" e "Finance" (Dice) nel periodo Post-Pandemia (Slice)
-SELECT 
-    g.country,
-    e.industry,
-    d.defense_mechanism,
-    AVG(cs.resolution_time_hours) as avg_res_time,
-    SUM(cs.affected_users) as total_victims
-FROM cyber_security_attack cs
-JOIN geography_dimension g ON cs.geo_id = g.geo_id
-JOIN entity_dimension e ON cs.entity_id = e.entity_id
-JOIN time_dimension t ON cs.time_id = t.time_id
-JOIN defense_dimension d ON cs.defense_id = d.defense_id
-WHERE t.pandemic_era = 'Post-Pandemic' -- Slice
-  AND e.industry IN ('Healthcare', 'Finance') -- Dice
-GROUP BY g.country, e.industry, d.defense_mechanism
-HAVING SUM(cs.affected_users) > 1000
-ORDER BY avg_res_time DESC;
+-- 4 PIVOT
+
+SELECT
+   a.unified_category,
+   COUNT(CASE WHEN g.west_or_east = 'Western' THEN 1 END) AS attacks_west,
+   COUNT(CASE WHEN g.west_or_east = 'Eastern' THEN 1 END) AS attacks_east
+FROM fact_cyber_incidents f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN attack_dimension a ON f.attack_id = a.attack_id
+GROUP BY a.unified_category
+ORDER BY a.unified_category;
 
 
--- BONUS: Defense Efficiency Index
-WITH GlobalAvg AS (
-    SELECT AVG(resolution_time_hours) as global_avg_time FROM cyber_security_attack
-)
-SELECT 
-    d.defense_mechanism,
-    COUNT(cs.geo_id) as times_deployed,
-    ROUND(AVG(cs.resolution_time_hours), 2) as avg_defense_res_time,
-    ROUND(
-        (1 - (AVG(cs.resolution_time_hours) / (SELECT global_avg_time FROM GlobalAvg))) * 100, 
-    2) as efficiency_score_percentage
-FROM cyber_security_attack cs
-JOIN defense_dimension d ON cs.defense_id = d.defense_id
-WHERE cs.resolution_time_hours > 0
-GROUP BY d.defense_mechanism
-ORDER BY efficiency_score_percentage DESC;
+
+
+-- Slice and dice
+
+SELECT
+    g.continent,
+    a.attack_type,
+    SUM(f.records_lost) as total_records_lost
+    COUNT(f.entity_id) as total_incidents
+FROM fact_cyber_incidents f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN attack_dimension a ON f.attack_id = a.attack_id
+JOIN time_dimension t ON f.time_id = t.time_id
+JOIN entity_dimension e ON f.entity_id = e.entity_id
+WHERE
+    t.year >= 2018
+    AND e.industry = 'Healthcare'
+    AND g.west_or_east = 'Western'
+GROUP BY 
+    g.continent,
+    a.attack_type
+ORDER BY
+    g.continent,
+    total_records_lost DESC;
