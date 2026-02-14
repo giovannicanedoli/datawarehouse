@@ -1,4 +1,19 @@
--- 1 ROLL UP
+-- RECONSTRUCTING BASIC CUBE
+
+SELECT *
+FROM fact_cyber_incidents f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN time_dimension t ON f.time_id = t.time_id
+JOIN attack_dimension a ON f.attack_id = a.attack_id
+JOIN defense_dimension d ON f.defense_id = d.defense_id
+JOIN entity_dimension e ON f.entity_id = e.entity_id
+
+SELECT *
+FROM fact_net_crime_stats f
+JOIN geography_dimension g ON f.geo_id = g.geo_id
+JOIN time_dimension t ON f.time_id = t.time_id
+
+-- ROLL UP
 
 SELECT g.continent,
 t.year, 
@@ -10,7 +25,7 @@ GROUP BY g.continent, t.year
 ORDER BY g.continent, t.year;
 
 
--- 2 DRILL DOWN
+-- DRILL DOWN
 
 SELECT
    g.country,
@@ -25,7 +40,7 @@ GROUP BY g.country, a.unified_category, a.attack_type
 ORDER BY total_records_lost DESC;
 
 
--- 3 DRILL ACROSS
+-- DRILL ACROSS
 
 WITH incident_metrics AS (
    SELECT
@@ -51,7 +66,7 @@ LEFT JOIN crime_stats_metrics cs ON t.time_id = cs.time_id
 ORDER BY t.year;
 
 
--- 4 PIVOT
+-- PIVOT
 
 SELECT
    a.unified_category,
@@ -66,13 +81,13 @@ ORDER BY a.unified_category;
 
 
 
--- Slice and dice
+-- SLICE AND DICE
 
 SELECT
     g.continent,
     a.attack_type,
-    SUM(f.records_lost) as total_records_lost
-    COUNT(f.entity_id) as total_incidents
+    SUM(f.records_lost) as total_records_lost,
+    COUNT(f.entity_id) as total_entities
 FROM fact_cyber_incidents f
 JOIN geography_dimension g ON f.geo_id = g.geo_id
 JOIN attack_dimension a ON f.attack_id = a.attack_id
