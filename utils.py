@@ -454,7 +454,7 @@ def categorize_continent(val):
         },
         "South America": {
             'Brazil', 'Argentina', 'Colombia', 'Chile', 'Peru', 'Venezuela', 
-            'Ecuador', 'Paraguay'
+            'Ecuador', 'Paraguay', 'Nicaragua'
         },
         "Europe": {
             'UK', 'Italy', 'Germany', 'France', 'Spain', 'Netherlands', 'Russia', 
