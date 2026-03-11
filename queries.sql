@@ -135,7 +135,7 @@ SELECT
     t.year,
     a.attack_type,
     amg.total_records_lost AS total_stolen_entries,
-    agm.malware_records_lost AS total_lost_due_to_malware_type
+    agm.malware_records_lost AS total_lost_due_to_malware_type,
     ncs.total_financial_losses AS annual_lost,
     CAST(amg.total_records_lost AS FLOAT) / NULLIF(ncs.total_financial_losses, 0) AS danger_ratio
 FROM AttackGivenMalwareAndGeo amg
@@ -198,6 +198,7 @@ ORDER BY financial_defense_rate_per_hour DESC;
 WITH continent_financial_statistics AS (
     SELECT 
         g.continent,
+        t.time_id,
         t.year,
         COUNT(*) AS total_crime_reports,
         AVG(f.total_financial_losses) AS mean_financial_loss,
@@ -206,12 +207,12 @@ WITH continent_financial_statistics AS (
     FROM fact_net_crime_stats f
     JOIN geography_dimension g ON f.geo_id = g.geo_id
     JOIN time_dimension t ON f.time_id = t.time_id
-    WHERE f.resolution_time_hours IS NOT NULL
-    GROUP BY g.continent, t.year
+    GROUP BY g.continent, t.time_id, t.year
 ),
 incident_impacts AS (
     SELECT 
         g.continent,
+        t.time_id,
         t.year,
         COUNT(*) AS total_incidents,
         AVG(fci.records_lost) AS mean_records_lost,
@@ -221,20 +222,20 @@ incident_impacts AS (
     FROM fact_cyber_incidents fci
     JOIN geography_dimension g ON fci.geo_id = g.geo_id
     JOIN time_dimension t ON fci.time_id = t.time_id
-    WHERE f.resolution_time_hours IS NOT NULL
-    GROUP BY g.continent, t.year
+    WHERE fci.resolution_time_hours IS NOT NULL
+    GROUP BY g.continent, t.time_id, t.year
 )
 SELECT 
-    rf.year,
-    rf.continent,
-    rf.total_crime_reports,
-    rf.mean_financial_loss,
-    rf.std_dev_financial_loss,
+    st.year,
+    st.continent,
+    st.total_crime_reports,
+    st.mean_financial_loss,
+    st.std_dev_financial_loss,
     ii.total_incidents,
     ii.mean_records_lost,
     ii.std_dev_records_lost,
     ii.mean_resolution_time
 FROM continent_financial_statistics st
 JOIN incident_impacts ii 
-ON st.year = ii.year AND st.continent = ii.continent
+  ON st.time_id = ii.time_id AND st.continent = ii.continent
 ORDER BY st.year DESC, st.mean_financial_loss DESC;
